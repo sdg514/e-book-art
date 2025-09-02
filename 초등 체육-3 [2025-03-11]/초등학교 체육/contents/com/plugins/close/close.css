@@ -1,0 +1,52 @@
+
+#plugin{
+	width:2320px; height:1080px;
+	background-color:rgba(0,0,0,0.5);
+}
+
+#close{
+	width:490px; height:200px;
+	position:absolute;
+	left:915px; top:440px;
+	background-color:#fff;
+	border:4px solid #ccc;
+	border-radius:20px;
+	overflow:hidden;
+}
+#close .head{
+	width:100%; height:50px;
+	background-color:#7e5ac6;
+}
+	#close .head>p{
+		width:100%; height:52px;
+		font-size:20px;
+		line-height:50px;
+		color:#fff;
+		text-indent:20px;
+	}
+	
+	
+#close .body{
+	width:100%; height:150px;
+}
+	#close .body>p{
+		text-align:center;
+		font-size:20px;
+		font-weight:bold;
+		line-height:30px;
+		margin-top:20px;
+	}
+	#close .body>div{
+		margin-top:20px;
+		text-align:center;
+	}
+#close .body [data-btn]{
+	width:134px; height:56px;
+}
+	#close .body [data-btn="yes"]{
+		background-image: url('img/btn-yes.png');
+	}
+	#close .body [data-btn="no"]{
+		margin-left:10px;
+		background-image: url('img/btn-no.png');
+	}

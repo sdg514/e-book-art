@@ -1,0 +1,19 @@
+
+#plugin{
+	width:2320px;
+	height:1080px;
+	background-color:#ff7648;
+}
+	#plugin img{
+		position:absolute;
+		cursor:pointer;
+		top:300px;
+		left:860px;
+	}
+
+[data-btn="close"]{
+	width:80px; height:80px;
+	position:absolute;
+	right:230px; top:30px;
+	background-image:url('res/btn-close.png');
+}

@@ -1,0 +1,19 @@
+body{
+	opacity:1 !important;
+	background-color:#fff;
+}
+
+@media print{
+	body, div[size="A4"]{
+		margin:0;
+		padding:0;
+		box-shadow:0;
+	}
+  	html{
+		overflow-y:hidden;
+	}
+	.print-page{
+		height:0px;
+		page-break-after:always;
+	}
+}

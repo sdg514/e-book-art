@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    
+    <!--COMMON CSS-->
+    <link rel="stylesheet" type="text/css" href="../../com/css/module.reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../com/css/module.ui.css" />
+    <!--COMMON JS-->
+    <script type="text/javascript" src="../../com/js/module.exe.js" ></script>
+    <script type="text/javascript" src="../../com/js/module.util.js" ></script>
+    <script type="text/javascript" src="../../com/js/module.fn.js" ></script>
+    <!--DATAS-->
+    <script type="text/javascript" src="../../com/datas/datas.user.js" ></script>
+    <script type="text/javascript" src="../../com/datas/datas.index.js" ></script>
+	
+    <!--PLUGINS-->
+    <link rel="stylesheet" type="text/css" href="../../com/plugins/plugins.css" />
+    <script type="text/javascript" src="../../com/plugins/plugins.js" ></script>
+    
+	<!-- VIEW -->
+	<link rel="stylesheet" type="text/css" href="css/popup-group.css" />
+	<script type="text/javascript" src="js/popup-group.js" ></script>
+</head>
+
+<body>
+    <!--화면 전체 영역-->
+    <div id="screen">
+        <!--콘텐츠 전체 영역-->
+        <div id="content">
+            
+            <div id="view">
+            	
+                <div id="head">
+                    <div>
+                    	
+                    	<img id="char" src="ui/ch-1.png" alt="원숭이"/>
+                    	
+                    	<h1 id="subject"></h1>
+	                    
+	                    <div id="ebook">
+	                        <p>교과서 <span class="page">24</span>쪽</p>
+	                    </div>
+	                    
+	                    <div class="navi">
+	                        <div data-btn="close"><p>닫기</p></div>
+	                    </div>
+                    </div>
+                </div>
+                
+                <div id="body"></div>
+                
+                <div id="foot">
+                    <div>
+                    	<div id="index">
+	                        
+	                        <div data-btn="index">
+	                            <p>학습 목차</p>
+	                        </div>
+	                        
+	                        <div id="quick-list"></div>
+	                    </div>
+	                    
+	                    <div id="tools">
+	                        
+	                        <div data-btn="save">
+	                            <p>진도 저장</p>
+	                        </div>
+	                        
+	                        <div data-btn="study">
+	                            <p>수업 도구</p>
+	                        </div>
+	                        
+	                        <div id="study-tools">
+	                            <!--div class="head">
+	                                <p>수업 도우미</p>
+	                                <div data-btn="study-close"></div>
+	                            </div-->
+	                            <div class="body">
+	                                <div data-btn-plugin="timer">타이머</div>
+	                                <div data-btn-plugin="blackboard">칠판</div>
+	                                <div data-btn-plugin="attention">주의 집중</div>
+	                                <div data-btn-plugin="blind">깜깜이</div>
+	                                <div data-btn-plugin="pick">발표자 뽑기</div>
+	                                <div data-btn-plugin="drawing">그리기</div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    
+	                    <div id="content-navi">
+	                        <div data-btn="prev">
+	                            <p>이전</p>
+	                        </div>
+	                        <p id="content-info">
+	                            <span class="current">6</span> / <span class="total">7</span>
+	                        </p>
+	                        <div data-btn="next">
+	                            <p>다음</p>
+	                        </div>
+	                    </div>
+                    </div>
+                </div>
+            </div>
+    	</div>
+    	
+        <div id="index-view">
+            <div>
+            	<div id="index-list"></div>
+            </div>
+        </div>             
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,77 @@
+
+
+#plugin{
+	width:440px;
+	background-color:#fff; 
+	border-radius:10px; 
+	overflow: hidden;
+	padding:5px 10px;
+	letter-spacing:0px;
+}
+
+[data-lesson]{
+	width:100%;
+	border-bottom:2px solid #eeeeee;
+}
+	[data-lesson]:nth-child(1){
+		border-top:none;
+	}
+	[data-lesson]:last-child{
+		border-bottom:none;
+	}
+		[data-lesson]>.title{
+			width:100%; height:48px;
+            font-weight:bold;
+			font-size:18px; line-height:50px;
+			color:#000;
+			cursor:pointer;
+		}
+			[data-lesson].on>.title{
+				color:#7e5ac6;
+			}
+		
+		[data-lesson].on{
+			border-top:0px solid #eeeeee;
+			border-bottom:0px solid #eeeeee;
+		}	
+		[data-lesson]>ul{
+			display:none;
+			background-color:#e7dbfc;
+			border-radius:10px;
+		}	
+			[data-lesson].on>ul{
+				display:block;
+				padding:4px 0px;
+			}
+		
+
+[data-chapter]{
+	width:100%;
+}
+	[data-chapter]>.title{
+		width:100%; height:38px;
+		font-size:16px; line-height:40px;
+		color:#000; font-weight:bold;
+		text-indent:10px;
+		cursor:pointer;
+	}
+		[data-chapter]>ul{
+			display:none;
+			background-color:#e7dbfc;
+			border-radius:10px;
+		}	
+			[data-chapter].on>ul{
+				display:block;
+				padding:4px 0px;
+			}
+
+[data-corner]{
+	width:100%;
+}
+	[data-corner]>.title{
+		width:100%; height:38px;
+		font-size:16px; line-height:40px;
+		color:#666; font-weight:bold;
+		text-indent:26px;
+		cursor:pointer;
+	}

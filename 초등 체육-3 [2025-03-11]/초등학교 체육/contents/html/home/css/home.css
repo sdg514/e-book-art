@@ -1,0 +1,241 @@
+/*================================================
+ * 배경 설정
+ ================================================*/
+#screen,
+#screen[data-lesson="1"]{background-image:url('./../ui/bg-1.png');}
+#screen[data-lesson="2"]{background-image:url('./../ui/bg-2.png');}
+#screen[data-lesson="3"]{background-image:url('./../ui/bg-3.png');}
+
+/*=======================*/	
+/*=======================*/	
+#content{}
+
+
+/*=======================*/	
+/*=======================*/	
+#logo{
+	position:absolute;left:100px;top:50px;
+	font-size:0px;
+}
+	#logo>h1{
+		display:inline-block;
+		width:206px;height:110px;
+	}		
+	#screen[data-grade="3"] #logo>h1{
+		background-image:url("./../ui/logos/logo-3.png");
+	}
+	#screen[data-grade="4"] #logo>h1{
+		background-image:url("./../ui/logos/logo-4.png");
+	}
+	
+/*=======================*/	
+/*=======================*/	
+#quick-menu{
+	position:absolute;
+	height:98px;
+	width:auto; height:0;
+	right:85px; top:60px;
+}
+	[data-menu]+[data-menu]{
+		margin-left:12px;
+	}
+	[data-menu]{
+		cursor:pointer;
+		display:inline-block;
+		font-size:0px;background-size:200% 100%;
+	}
+	[data-menu]:hover{background-position-x:100%;}
+	
+		[data-menu="load"]{
+			width:140px; height:68px;
+			background-image:url("./../ui/btns/goStudy.png");
+		}
+		[data-menu="help"]{
+			width:62px; height:68px;
+			background-image:url("./../ui/btns/help.png");
+		}
+		[data-menu="fileroom"]{
+			width:150px; height:96px;
+			background-image:url("./../ui/btns/fileroom.png");
+			position:absolute;
+			right:170px; top:152px;
+		}
+
+		
+		
+/*=======================*/	
+/*=======================*/	
+#index{
+	position:absolute;left:0px;top:0px;
+	width:100%;height:0;
+}
+	#image{
+		position:absolute;left:60px;top:550px;
+		width:460px; height:307px;
+		border-radius:30px;
+		background-image:url('./../ui/thumbs/qr.png');
+	}
+	
+	/*=======================*/	
+	/*=======================*/
+	#lesson{
+		position:absolute;left:296px;top:225px;
+	}	
+		#lesson [data-lesson]{
+			cursor:pointer;
+			display:inline-block;
+			width:204px;height:118px;
+			background-size:200% 100%;
+			font-size:0;
+		}
+		#lesson [data-lesson].on{
+			background-position-x:100%;
+		}
+			#lesson [data-lesson]+[data-lesson]{
+				margin-left:20px;
+			}
+			#lesson [data-lesson="1"]{
+				background-image:url("./../ui/btns/chap-1.png");
+			}
+			#lesson [data-lesson="2"]{
+				background-image:url("./../ui/btns/chap-2.png");
+			}
+			#lesson [data-lesson="3"]{
+				background-image:url("./../ui/btns/chap-3.png");
+			}
+		
+	/*=======================*/	
+	/*=======================*/
+	#chapter{
+		position:absolute;left:300px;top:390px;
+	}
+		#chapter [data-chapter]{
+			cursor:pointer;
+			display:inline-block;
+			font-size:32px;
+			font-weight:900;
+			color:#000;
+		}
+			#chapter [data-chapter]+[data-chapter]{
+				margin-left:80px;
+			}
+			
+			#chapter [data-chapter] [data-icon]{
+				display:inline-block;
+				width:40px;height:40px;
+				line-height:44px;
+				font-size:0px;
+				text-align:center;
+				color:#fff;
+				background-color:#000;
+				border-radius:40px;
+				margin-right:15px;
+				
+				position:relative; top:-5px;
+			}
+				#chapter [data-chapter] [data-icon]:before{
+					font-size:32px;
+				}
+				#chapter [data-chapter] [data-icon="①"]:before{
+					content:"1";
+				}
+				#chapter [data-chapter] [data-icon="②"]:before{
+					content:"2";
+				}
+				#chapter [data-chapter] [data-icon="③"]:before{
+					content:"3";
+				}
+			
+			#screen[data-lesson="1"] #chapter [data-chapter].on{
+				color:#22ac38;
+			}	
+			#screen[data-lesson="1"] #chapter [data-chapter].on [data-icon]{
+				background-color:#22ac38;
+			}
+			
+			#screen[data-lesson="2"] #chapter [data-chapter].on{
+				color:#f39800;
+			}	
+			#screen[data-lesson="2"] #chapter [data-chapter].on [data-icon]{
+				background-color:#f39800;
+			}
+			
+			#screen[data-lesson="3"] #chapter [data-chapter].on{
+				color:#8564a9;
+			}	
+			#screen[data-lesson="3"] #chapter [data-chapter].on [data-icon]{
+				background-color:#8564a9;
+			}
+				
+	/*=======================*/	
+	/*=======================*/
+	#corner{
+		position:absolute;left:300px;top:490px;
+		width:1350px; height:545px;
+		overflow-x:hidden;overflow-y:auto;
+	}	
+	
+		#corner [data-corner]{
+			position:relative;
+			font-size:26px;
+			width:1320px; 
+			font-weight:bold;
+			line-height:66px;
+			border-bottom:1px dashed #aaa;
+			margin-right:0px;
+		}
+			#corner [data-corner="1-1-1"]{
+				color:#22ac38;
+			}
+			#corner [data-corner="2-1-1"]{
+				color:#f39800;
+			}
+			#corner [data-corner="3-1-1"]{
+				color:#8564a9;
+			}
+			
+		#corner [data-corner] [data-icon]{
+			display:inline-block;
+			width:160px;height:40px;
+			position:relative; top:13px;
+			margin-right:20px;
+			margin-left:10px;
+			line-height:43px;
+			text-align:center;
+			
+			border-radius:100px;
+			color:#fff;
+			font-size:22px;
+		}
+		
+		#corner [data-corner] .page{
+			position:absolute;right:160px;top:0px;
+			text-align:right;
+			font-size:22px;
+			color:#b3b3b3;
+		}
+		
+		#corner [data-corner] button[data-type="ebook"]{
+			position:absolute;right:70px;top:15px;
+			font-size:0;
+			width:42px;height:34px;
+			background-image:url("./../ui/btns/ebook.png");
+		}
+		
+		#corner [data-corner] button[data-type="popup"]{
+			position:absolute;right:10px;top:15px;
+			font-size:0;
+			width:41px;height:35px;
+			background-image:url("./../ui/btns/smart.png");
+		}
+		
+			#screen[data-lesson="1"] #corner [data-corner] [data-icon]{
+				background-color:#7acd88;
+			}
+			#screen[data-lesson="2"] #corner [data-corner] [data-icon]{
+				background-color:#f8c166;
+			}
+			#screen[data-lesson="3"] #corner [data-corner] [data-icon]{
+				background-color:#b6a2cb;
+			}
+			

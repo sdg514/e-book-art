@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+/* ---------------------------
+  폰트 등록
+------------------------------*/
+
+/*Dodam*/
+@font-face {
+	font-family:'Gangwon'; 
+	font-style:normal; 
+	font-weight:normal; 
+	src:local('※'), 
+	url('../../files/fonts/woff/Gangwon.woff') format("woff"), 
+	url('../../files/fonts/otf/Gangwon.otf') format("otf");
+}
+
+/*Dodam*/
+@font-face {
+	font-family:'One'; 
+	font-style:normal; 
+	font-weight:normal; 
+	src:local('※'), 
+	url('../../files/fonts/woff/ONE-Mobile-Title.woff') format("woff"), 
+	url('../../files/fonts/otf/ONE-Mobile-Title.otf') format("otf");
+}
+
+/*Dodam*/
+@font-face {
+	font-family:'Cafe'; 
+	font-style:normal; 
+	font-weight:normal; 
+	src:local('※'), 
+	url('../../files/fonts/woff/Cafe24Ssurround-v2.0.woff') format("woff"), 
+	url('../../files/fonts/otf/Cafe24Ssurround-v2.0.otf') format("otf");
+}
+
+/*나눔 스퀘어*/
+@font-face {
+	font-family:'Nanum'; 
+	font-style:normal; 
+	font-weight:100; 
+	src:local('※'), 
+	url('../../files/fonts/woff/NanumSquareRoundL.woff') format("woff"), 
+	url('../../files/fonts/otf/NanumSquareRoundL.otf') format("otf");
+}
+@font-face {
+	font-family:'Nanum'; 
+	font-style:normal; 
+	font-weight:normal; 
+	src:local('※'), 
+	url('../../files/fonts/woff/NanumSquareRoundR.woff') format("woff"), 
+	url('../../files/fonts/otf/NanumSquareRoundR.otf') format("otf");
+}
+@font-face {
+	font-family:'Nanum'; 
+	font-style:normal; 
+	font-weight:bold; 
+	src:local('※'), 
+	url('../../files/fonts/woff/NanumSquareRoundB.woff') format("woff"), 
+	url('../../files/fonts/otf/NanumSquareRoundB.otf') format("otf");
+}
+@font-face {
+	font-family:'Nanum'; 
+	font-style:normal; 
+	font-weight:900; 
+	src:local('※'), 
+	url('../../files/fonts/woff/NanumSquareRoundEB.woff') format("woff"), 
+	url('../../files/fonts/otf/NanumSquareRoundEB.otf') format("otf");
+}
+
+/*--------------------------------------------------------------
+  	폰트 기본 셋팅 [띄어 쓰기 : &#xA0; / &#160; / &#32; 줄 바꿈 <br>]
+----------------------------------------------------------------*/
+body{
+	font-family:'Nanum';
+	font-size:30px;
+}
+
+/*---------
+ 화면 정보
+ ----------*/
+#screen{
+	position:absolute; left:0px; top:0px;
+	width:2320px; height:1080px;
+	overflow:hidden;
+}
+	#screen>#content{
+		position:absolute; left:200px; top:0px;
+		width:1920px; height:1080px;
+	}
+
+/* ============
+  색상
+ ==============*/
+.FCd{color:#000 !important;}
+.FCa{color:#db0101 !important;}
+.FCu{color:#05f !important;}
+
+.FCw{color:#fff !important;}
+.FCr{color:#f00 !important;}
+.FCo{color:#f60 !important;}
+.FCy{color:#fc0 !important;}
+.FCg{color:#6fc  !important;}
+.FCb{color:#06f !important;}
+.FCn{color:#311B92 !important;}
+.FCp{color:#8400ff !important;}
+
+.BCd{background-color:#000 !important;}
+.BCa{background-color:#db0101 !important;}
+.BCu{background-color:#05f !important;}
+
+.BCw{background-color:#fff !important;}
+.BCr{background-color:#f00 !important;}
+.BCo{background-color:#f60 !important;}
+.BCy{background-color:#fc0 !important;}
+.BCg{background-color:#6fc  !important;}
+.BCb{background-color:#06f !important;}
+.BCn{background-color:#311B92 !important;}
+.BCp{background-color:#8400ff !important;}
+
+/* ============
+  기능
+ ==============*/
+
+/**
+ * 프로그래스바
+ */
+.PROGRESS{
+	position:relative;
+	width:200px; height:10px;
+	border-radius:100px;
+	background-color:#fff;
+	cursor:pointer;
+}
+	.PROGRESS>.gauge{
+		position:absolute; left:0px; top:0px;
+		width:0px; height:100%;
+	}
+	.PROGRESS>.ball{
+		position:absolute; left:0px; top:-5px;
+		width:20px; height:20px;
+		border-radius:100px;
+		background-color:#f60;
+	}
+	.PROGRESS>.mask{
+		position:absolute;
+	}
+	
+/**
+ * 플래이어
+ */
+.PLAYER{
+	display:table; clear:both;	
+}
+	.PLAYER>*{
+		float:left;
+	}
+	.PLAYER>[data-btn]{
+		position:relative; z-index:1;
+		width:16px; height:16px;
+		background-size:100% 100%;
+	}
+		.PLAYER>[data-btn="play"]{
+			background-image:url('player/btn-play.png');
+		}
+		.PLAYER>[data-btn="pause"]{
+			display:none;
+			background-image:url('player/btn-pause.png');
+		}
+		.PLAYER>[data-btn="stop"]{
+			margin-left:5px;
+			background-image:url('player/btn-stop.png');
+		}
+		.PLAYER>.PROGRESS{
+			margin-left:5px; margin-top:7px;
+			width:60px; height:3px;
+		}
+			.PLAYER>.PROGRESS>.gauge{}
+			.PLAYER>.PROGRESS>.ball{
+				left:0px; top:-5px;
+				width:13px; height:13px;
+			}
+	
+	[data-sentence]{
+		cursor:pointer;
+	}
+		[data-sentence]:hover{
+			color:#019acd;
+		}
+		[data-sentence].section{
+			color:#ff6701;
+		}
+		img[data-sentence]:hover{
+			transform:scale(1.05);
+		}
+		img[data-sentence].section{
+			transform:scale(1.05);
+		}
+		
+/**
+ * 텝뷰
+ */
+.TAB{
+	opacity:0;
+	position:relative;
+}
+	.TAB>.tab-head{
+		position:relative;
+		z-index:2;
+	}
+		.TAB>.tab-head>[data-idx]{
+			position:relative;
+			display:inline-block;
+			background-size:200% 100%;
+			cursor:pointer;
+		}
+		.TAB>.tab-head>[data-idx].on{
+			background-position-x:100%;
+			cursor:default;
+		}
+	.TAB>.tab-body{
+		width:100%;
+		position:relative;
+		z-index:1;
+	}
+		.TAB>.tab-body>[data-item]{
+			opacity:0;
+			position:absolute;
+			display:none;
+		}
+		.TAB>.tab-body>[data-item].on{
+			opacity:1;
+			display:block;
+		}
+
+.SLIDE{
+	width:100%; height:100%;
+}
+	.SLIDE .slide-body{
+		width:100%; height:100%;
+	}
+	
+/*-----------------------------------------------------------
+	
+ -----------------------------------------------------------*/
+.full{
+	width:100%; height:100%;
+}
+/*-----------------------------------------------------------
+	버튼
+ -----------------------------------------------------------*/
+[data-btn]{
+	cursor:pointer;
+	font-size:0px;
+	display:inline-block;
+	background-size:200% 100%;
+}
+	[data-btn]:hover{ 
+		background-position-x:100%;
+	}
+	[data-btn].switch{
+		background-position-x:100%;
+	}
+	[data-btn].on{
+		cursor:default; background-position-x:100%;
+	}
+	[data-btn].disabled{
+		cursor:default !important; 
+	}
+		[data-btn].disabled:hover{
+			background-position-x:0%;
+		}
