@@ -1,0 +1,197 @@
+
+/*================================================
+ * 배경 설정
+ ================================================*/
+
+#screen{
+	background-image: url('./../ui/bg.jpg');
+}
+
+#logo{
+	position:absolute;
+	left:32px; top:20px;
+	width:282px; height:138px;
+	font-size:0px;
+}
+	[data-grade="3"] #logo{
+		background-image:url('./../ui/logos/logo-3.png');
+	}
+	[data-grade="4"] #logo{
+		background-image:url('./../ui/logos/logo-4.png');
+	}
+	
+#step-menu{
+	position:absolute;
+	height:98px;
+	width:auto; height:0;
+	right:50px; top:60px;
+}
+	#step-menu>[data-btn]{
+		cursor:pointer;
+		display:inline-block;
+		height:28px;
+		
+		font-family:'Aggro';
+		font-size:34px;
+		
+		color:#000;
+		background-size:200% 100%;
+		padding:0px 20px;
+	}
+		#step-menu>[data-btn]:hover{
+			color:#b63f91;
+		}
+	
+		#step-menu>[data-btn]+[data-btn]{
+			border-left:3px solid #000;
+		}
+	#step-menu>[data-btn]>p{
+		line-height:34px;
+		position:relative;top:-3px;
+	}		
+
+/*=====================
+ * 
+ ======================*/			
+#step-view{
+	position:absolute;
+	left:0px; top:0px;
+}
+	/*=====================
+	 * 상단 네비
+	 ======================*/
+	#step-navi{
+		position:absolute;
+		left:0px; top:230px;
+		width:100%;
+	}
+				
+	/*=====================
+	 * 추가 설정
+	 ======================*/
+	#step-body{
+		position:absolute;
+		left:48px; top:435px;
+		width:1824px;height:595px;
+		padding:0px 40px;
+	}
+		/*=====================
+		 * 추가 설정
+		 ======================*/
+		#body-info{
+			position:relative;
+			display:block;
+			line-height:48px;
+			margin-top:20px;
+		}
+			#body-info>.title{
+				position:relative;
+				font-family:'Aggro';
+				font-size:28px; 
+				padding-left:74px;
+			}
+			#body-info>.title:before{
+				content:'';
+				display:inline-block;
+				width:54px;height:48px;
+				margin-right:15px;
+				background-image: url('./../ui/icons/icon-컴퓨터.png');
+				position:absolute;left:0px;top:0px;
+			}
+			
+		/*=====================
+		 * 추가 설정
+		 ======================*/
+		[data-fn="group-step"]{
+			position:relative;
+			margin-top:15px;
+		}
+			
+			.fn-group-step{
+				position:relative;
+				width:100%; height:500px;
+			}
+				.fn-group-step>.container{
+					position:relative;
+					width:100%; max-height:500px;
+					border:3px solid #e0e0e0;
+					overflow-x:hidden; overflow-y:auto;
+					background-color:#fff;
+				}
+				
+				.fn-group-step .dp1{
+					display:table;
+					width:100%;
+					border-bottom:3px solid #e0e0e0;
+				}
+				.fn-group-step .dp1:last-child{
+					border-bottom:0;
+				}
+					.fn-group-step .dp1>.title{
+						display:table-cell;
+						position:relative;
+						width:16%;
+						overflow:hidden;
+						font-family:'Aggro';
+						font-size:25px; 
+						font-weight:normal;
+						line-height:80px; 
+						text-align:center;
+						color:#000;
+						background-color:#fdf4c8;
+						vertical-align:middle;
+					}
+						
+					.fn-group-step .dp1>.dp2{
+						display:table-cell;
+						position:relative;
+						width:84%; min-height:80px;
+						line-height:80px;
+						border-left:3px solid #e0e0e0;
+						cursor:pointer;
+						background-color:#fff;
+					}
+						.fn-group-step .dp1>.dp2>[data-id]+[data-id]{
+							border-top:3px solid #e0e0e0;
+						}
+						.fn-group-step .dp1>.dp2>[data-id]>div{
+							position:relative;
+						}
+						.fn-group-step .dp1>.dp2 .icon-title{
+							padding-left:180px;
+						}
+						.fn-group-step .dp1>.dp2 [data-icon]{
+							display:inline-block;
+							position:absolute;left:20px;top:20px;
+							width:140px; height:40px;
+							
+							background-color:#eeeeee;
+							border-radius:100px;
+							text-align:center;
+							line-height:40px;
+							
+							font-family:'Aggro';
+							font-size:19px;
+							font-weight:100;
+						}
+						.fn-group-step .dp1>.dp2 .title{
+							display:inline-block;
+							font-family:'Aggro';
+							font-size:24px;
+							font-weight:100;
+						}
+						.fn-group-step .dp1>.dp2 .page{
+							position:absolute;
+							right:20px;top:24px;
+							
+							width:71px;height:32px;
+							font-family:'Aggro';
+							font-size:18px;
+							font-weight:100;
+							line-height:40px;
+							text-align:center;
+							line-height:32px;
+							color:#aaaaaa;
+							border:2px solid #d6d6d6;
+							border-radius:5px;
+						}

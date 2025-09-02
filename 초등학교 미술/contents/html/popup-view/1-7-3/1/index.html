@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--COMMON CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+    <!--COMMON JS-->
+    <script type="text/javascript" src="../../../../com/js/module.exe.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.util.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.fn.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.media.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.quiz.js" ></script>
+    <!-- VIEW SRC-->
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+    <script type="text/javascript" src="../../[src]/js/popup.skill.js" ></script>
+    <script type="text/javascript" src="../../[src]/js/popup.view.js" ></script>
+    <!-- VIEW -->
+    <!--link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js" ></script-->
+</head>
+
+<body>
+	
+	<main id="popup-view" data-design="">
+		
+		<header>
+			<!--주제-->
+	    	<h1 data-subject="동기유발">
+	    		<span>동기유발</span>
+	    		<span>미술관 관람기에 포함하는 내용을 알아봅시다.</span>
+	    	</h1>
+		</header>
+		
+	    <section>
+	    	
+	    	<div data-ui="mt:50">
+	    		
+	    		<img src="res/궁금이_고민.png" data-ui="mt:80 w:500"/>
+	    		
+				<!--퀴즈-->
+				<quizItem data-id="q-1" data-ui="P:a x:600 y:150">
+						
+					<!--쓰기 박스-->
+					<div data-box="서술형" data-ui="w:1200">
+						
+						<!--쓰기 제목-->
+						<div data-title="">
+							<p>미술관 관람기에는 어떤 내용이 포함되어야 할까요?</p>
+						</div>
+						
+						<!--쓰기 기능-->
+						<assessmentItem 
+							data-response-type="essay" 
+							data-essay=""
+							data-ui="h:400">
+							
+							<itemBody>
+								<textarea placeHolder="직접 써 보세요."></textarea>
+							</itemBody>
+							
+							<assessFeedback>
+								<p data-ui="LS:-2 LH:80">미술관 관람기의 제목이 포함되어야 해요.</p>
+								<p data-ui="LS:-2 LH:80">관람기를 쓴 사람의 이름도 써야 해요.</p>
+							</assessFeedback>
+							
+						</assessmentItem>
+					</div>
+					
+					<!--퀴즈 버튼-->
+					<quizBtn data-id="q-1" 
+						data-skill="exReset" 
+						data-ui="P:a r:30 t:-100">
+						<p>예시 답안</p>
+					</quizBtn>
+				</quizItem>
+	    	</div>
+	    </section>
+	    
+	</main>
+	
+</body>
+</html>
+

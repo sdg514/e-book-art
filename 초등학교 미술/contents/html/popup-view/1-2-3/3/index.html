@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--COMMON CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+    <!--COMMON JS-->
+    <script type="text/javascript" src="../../../../com/js/module.exe.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.util.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.fn.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.media.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.quiz.js" ></script>
+    <!-- VIEW SRC-->
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+    <script type="text/javascript" src="../../[src]/js/popup.skill.js" ></script>
+    <script type="text/javascript" src="../../[src]/js/popup.view.js" ></script>
+    <!-- VIEW -->
+    <!--link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js" ></script-->
+</head>
+
+<body>
+	
+	<main id="popup-view" data-design="">
+
+		<div data-skill="tab">
+			<div data-tab="1">
+
+				<header data-ui="y:0">
+					<!--주제-->
+					<h1 data-subject="마무리하기">
+						<span>마무리하기</span>
+						<span>감상 관점을 확인해 봅시다.</span>
+					</h1>
+				</header>
+
+				<div data-ui="BG:./res/img-01.png w:1307 h:686 mx:auto">
+
+					<div data-ui="P:a x:50 y:40">
+			    		
+			    		<!--클릭 보기-->
+			    		<div data-skill="show" data-ui="P:a l:522 t:38">
+			    			
+			    			<!--보여질 대상 : 이미지-->
+			    			<div data-show="" data-ui="P:a x:-236 y:298 w:1100 Fw:bold">
+			                	<div data-dot="·">
+									<p>작품에서 재미있게 표현한 부분을 찾아 이야기해 봅시다.</p>
+								</div>
+			                	<div data-dot="·">
+									<p>현실 세계와 다르게 표현한 부분을 찾아 이야기해 봅시다.</p>
+								</div>
+			                </div>
+
+			                <!--클릭 보기 버튼-->
+			            	<div data-btn="show" data-ui="P:a x:278 y:424">정답</div>
+			            </div>
+			    	</div>
+				</div>
+	    		
+	    	</div>	
+			<div data-tab="2">
+				<header data-ui="y:0">
+					<!--주제-->
+					<h1 data-subject="마무리하기">
+						<span>마무리하기</span>
+						<span>감상 관점을 토대로 상상의 세계를 친구들과 감상해 봅시다.</span>
+					</h1>
+				</header>
+
+				<div data-ui="D:f w:1481 mx:auto">
+					<div data-ui="w:844">
+						<p><img src="./res/img-02.png" alt="학생 그림" data-ui="w:844"></p>
+						<p data-note="그림-c" data-ui="mt:10"><b>최성민 외 27명</b>(학생 협동 작품) 「상상의 세계」<br/>(색점토, 도화지, 사인펜 등/ 가변 크기)</p>
+					</div>
+					<div data-ui="w:586 ml:50 P:r">
+						<!--클릭 보기-->
+						<div data-skill="show" data-ui="P:a x:0 y:0">
+		            	
+							<img src="res/cha_1.png" alt="부엉이" data-ui="w:370 P:a x:0 y:267"/>
+							
+							<!--보여질 대상 : 말풍선-->
+							<div data-show="" 
+								data-box="말풍선" 
+								data-color="연녹" 
+								data-ui="P:a x:147 y:-17 w:458">
+								
+								<p data-ui="Ta:c F:KNPS Fs:60 LH:70">작품에서 재미있게<br/>표현한 부분을 찾아<br/>이야기해 볼까?</p>
+								
+								<!--말풍선 꼬리-->
+								<div data-tail="bl" data-ui="x:170"></div>
+							</div>
+							
+							<!--클릭 보기 버튼-->
+							<div data-btn="show" data-sound="./res/2-15P-1.mp3" data-ui="P:a x:316 y:216">정답</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+
+		<style>
+			[data-dot="·"] p{
+				font-size: 54px;
+				line-height: 76px;
+				padding-left: 30px;
+			}
+			[data-dot="·"]::before{
+				content: '';
+				width: 20px;
+				height: 20px;
+				background-color: #7b6a56;
+				border-radius: 50%;
+				position: relative;
+				top: 55px;
+				left: 0;
+			}
+
+			[data-tab="1"] [data-skill="show"] [data-btn="show"] {
+				width: 92px;
+				height: 98px;
+				background-image: url(../../[res]/btns/btn-mouse.png);
+			}
+		</style>
+
+	</main>
+	
+</body>
+</html>
+

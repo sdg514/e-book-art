@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="ko" id="html">
+    <head>
+        <meta charset="UTF-8"/>
+        <!-- COMMON CSS -->
+        <link rel="stylesheet" type="text/css" href="../../css/module.reset.css"/>
+        <link rel="stylesheet" type="text/css" href="../../css/module.ui.css"/>
+		<!-- COMMON JS -->
+		<script type="text/javascript" src="../../js/module.exe.js"></script>
+		<script type="text/javascript" src="../../js/module.util.js"></script>
+		<script type="text/javascript" src="../../js/turn.jquery.js"></script>
+		
+		<!-- VIEW -->
+		<link rel="stylesheet" type="text/css" href="link.css"/>
+		<script type="text/javascript" src="link.js"></script>
+	</head>
+
+	<body>
+		<div id="plugin">
+	        <div class="head">
+                <div data-btn="url" class="on">url</div>
+                <div data-btn="file">file</div>
+            </div>
+            <div class="body">
+                <div class="url-body">
+                    <div class="title">
+                        <p>제목 입력</p>
+                        <input class="url-title" type="text" maxlength="12" placeHolder="제목을 입력하세요." autocomplete="false" />
+                    </div>
+                    <div class="content">
+                        <p>링크 주소</p>
+                        <input class="url-txt" type="text" placeHolder="링크 주소를 입력하세요." autocomplete="false"/>
+                    </div>
+                    <a class="browser" href="https://www.youtube.com/" target="_blank">유듀브 바로가기</a>
+                </div>
+                <div class="file-body">
+                    
+                    <div class="title">
+                        <p>제목 입력</p>
+                        <input class="file-title" type="text" maxlength="12" placeHolder="제목을 입력하세요." autocomplete="false" />
+                    </div>
+                    <div class="content">
+                        <p>링크 주소</p>
+                        <input class="file-txt" type="text" placeHolder="파일 주소가 자동 입력됩니다." readonly=""/>
+                    </div>
+                    
+                    <div data-btn="search">검색하기</div>
+                </div>
+            </div>
+            <div class="foot">
+                <div data-btn="add">등록하기</div>
+            </div>
+		</div>
+	</body>
+
+</html>
+

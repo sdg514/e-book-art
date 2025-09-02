@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--COMMON CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+    <!--COMMON JS-->
+    <script type="text/javascript" src="../../../../com/js/module.exe.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.util.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.fn.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.media.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.quiz.js" ></script>
+    <!-- VIEW SRC-->
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+    <script type="text/javascript" src="../../[src]/js/popup.skill.js" ></script>
+    <script type="text/javascript" src="../../[src]/js/popup.view.js" ></script>
+    <!-- VIEW -->
+    <!--link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js" ></script-->
+</head>
+
+<body>
+	
+	<main id="popup-view" data-design="">
+		
+		<header>
+	    	<!--주제-->
+	    	<h1 data-subject="살펴보기2">
+	    		<span>살펴보기2</span>
+	    		<span>사람들의 욕심과 무관심으로 동물들이 멸종한대!</span>
+	    	</h1>
+	    	
+	    	<div data-title="" data-ui="mt:40">
+		    	<p>동물들이 멸종하는 까닭을 살펴봅시다.</p>
+		    </div>
+		    
+	    </header>
+
+		<div data-ui="">
+			<div data-box="이미지" data-ui="ml:550 mt:100">
+				<img src="res/img1.png" alt="" data-ui="h:550">
+			</div>
+			<p data-note="그림-c" data-ui="P:a x:706 y:409" class="a"><b>북극곰</b></p>
+			<p data-note="그림-c" data-ui="P:a x:961 y:430" class="a"><b>늑대</b></p>
+			<p data-note="그림-c" data-ui="P:a x:1405 y:467" class="b"><b>바다거북</b></p>
+			<p data-note="그림-c" data-ui="P:a x:791 y:837"><b>수달</b></p>
+			<p data-note="그림-c" data-ui="P:a x:1172 y:817"><b>코알라</b></p>
+		</div>
+
+		<!--클릭 보기-->
+		<div data-skill="show" data-ui="P:a x:245 y:600">
+			
+			<!--보여질 대상 : 말풍선-->
+			<div data-show="" 
+				data-box="말풍선" 
+				data-color="연녹" 
+				data-ui="P:a x:-106 y:-240 w:460">
+				
+				<p data-ui="Ta:c F:KNPS Fs:50 LH:70">지구 온도 상승으로 빙하가 녹아 살 곳이 사라져요.</p>
+				
+				<!--말풍선 꼬리-->
+				<div data-tail="rb" data-ui="t:42 x:440"></div>
+			</div>
+			
+			<!--클릭 보기 버튼-->
+			<div data-btn="show" data-sound="./res/36p-1_1.mp3" data-ui="P:a x:323 y:-138">정답</div>
+		
+		</div>
+
+		<!--클릭 보기-->
+		<div data-skill="show" data-ui="P:a x:245 y:923">
+			
+			<!--보여질 대상 : 말풍선-->
+			<div data-show="" 
+				data-box="말풍선" 
+				data-color="연녹" 
+				data-ui="P:a x:7 y:-277 w:362">
+				
+				<p data-ui="Ta:c F:KNPS Fs:50 LH:70">물이 더러워져서<br/> 마실 물이 없어요.</p>
+				
+				<!--말풍선 꼬리-->
+				<div data-tail="rt" data-ui="t:76 x:341"></div>
+			</div>
+			
+			<!--클릭 보기 버튼-->
+			<div data-btn="show" data-sound="./res/36p-1_2.mp3" data-ui="P:a x:358 y:-225">정답</div>
+		
+		</div>
+
+		<!--클릭 보기-->
+		<div data-skill="show" data-ui="P:a x:645 y:523">
+			
+			<!--보여질 대상 : 말풍선-->
+			<div data-show="" 
+				data-box="말풍선" 
+				data-color="연녹" 
+				data-ui="P:a x:314 y:-354 w:483">
+				
+				<p data-ui="Ta:c F:KNPS Fs:50 LH:70">환경 오염 때문에 산이나 들에서 먹이가 사라져요.</p>
+				
+				<!--말풍선 꼬리-->
+				<div data-tail="bl" data-ui="t:182 x:99"></div>
+			</div>
+			
+			<!--클릭 보기 버튼-->
+			<div data-btn="show" data-sound="./res/36p-1_3.mp3" data-ui="P:a x:358 y:-225">정답</div>
+		
+		</div>
+	    <style>
+			.a[data-note="그림-c"]>*:nth-child(1):before {
+				transform:rotate(180deg)
+			}
+			.b[data-note="그림-c"]>*:nth-child(1):before {
+				transform:rotate(-90deg)
+			}	
+		</style>
+	    
+	    
+	</main>
+	
+</body>
+</html>
+

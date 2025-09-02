@@ -1,0 +1,228 @@
+/*=====================
+ * 네비 설정
+ ======================*/
+
+[data-fn="step-navi"]{
+	position:relative;
+}
+	/*이동 네비 기능*/
+	[data-fn="step-navi"] .navi{
+		position:absolute;
+		right:54px; top:26px;
+	}
+		[data-fn="step-navi"] .navi>*{
+			display:inline-block;
+		}
+		[data-fn="step-navi"] .navi p{
+			width:215px; text-align:center;
+			font-size:20px; font-weight:bold;
+			line-height:48px; color:#014743;
+		}
+		[data-fn="step-navi"] .navi>[data-btn]{
+			width:43px; height:43px;
+		}
+			[data-fn="step-navi"] .navi>[data-btn="prev"]{
+				background-image:url('./../ui/btns/btn-prev.png');
+			}
+			[data-fn="step-navi"] .navi>[data-btn="next"]{
+				background-image:url('./../ui/btns/btn-next.png');
+			}
+			[data-fn="step-navi"] .navi>[data-btn].disabled{
+				opacity:0.5;
+			}
+	
+	/*목차 리스트 설정*/
+	[data-fn="step-navi"] [data-depth]{
+		position:absolute;
+		display:inline-block;
+	}
+		[data-fn="step-navi"] [data-depth].on{
+			z-index:100;
+		}
+		[data-fn="step-navi"] [data-depth]>.list{
+			display:none;
+			position:relative;
+			z-index:10;
+			width:100%;
+			background-color:#fff;
+			border:6px solid #94186c;
+			border-radius:15px;
+			overflow:hidden;
+		}
+			[data-fn="step-navi"] [data-depth]>.list [data-val]{
+				border-top:2px dotted #d6d6d6;
+			}
+			[data-fn="step-navi"] [data-depth]>.list [data-val].on,
+			[data-fn="step-navi"] [data-depth]>.list [data-val]:hover{
+				background-color:#f1dcee;
+			}
+				[data-fn="step-navi"] [data-depth]>.list [data-val]:nth-child(1){
+					border-top:0px;
+				}
+
+[data-fn="step-navi"] [data-depth="1"]{
+	left:125px; top:24px;
+	width:410px; height:50px;
+}
+	[data-fn="step-navi"] [data-depth="1"]>.select{
+		width:100%; height:100%;
+		
+		font-family:"Aggro";
+		font-size:38px; 
+		font-weight:normal;
+		line-height:50px;
+		text-align:center;
+		color:#000;
+	}
+		[data-fn="step-navi"] [data-depth="1"] [data-val]{
+			/*cursor:pointer;*/
+			width:100%; height:50px;
+		}
+		
+[data-fn="step-navi"] [data-depth="2"]{
+	left:45px; top:113px;
+	width:670px; height:68px;
+	background-color:#fff;
+	border-radius:50px;
+}
+	[data-fn="step-navi"] [data-depth="2"]>.select{
+		width:100%; height:100%;
+	}
+		[data-fn="step-navi"] [data-depth="2"] [data-val]{
+			cursor:pointer;
+			width:100%; height:68px;
+			
+			font-family:"Aggro";
+			font-size:28px; 
+			font-weight:normal; 
+			color:#1c1c1c;
+			line-height:72px; 
+			letter-spacing: -1px;
+		}
+			/*아이콘 설정*/
+			[data-fn="step-navi"] [data-depth="2"] [data-val] [data-icon]{
+				position:relative;
+				
+				display:inline-block;
+				margin:0px 12px 0px 20px; top:16px; 
+				
+				font-family:"Aggro";
+				font-size:23px;
+				font-weight:normal;
+				text-align:center;
+				line-height:37px; 
+				
+				width:34px; height:34px;
+				color:#fff;
+				border-radius:30px;
+			}
+				[data-fn="step-navi"] [data-depth="2"] [data-val] [data-icon="·"]{
+					color:#c486ac;
+				}
+				
+				[data-fn="step-navi"] [data-depth="2"] [data-val] [data-icon="0"],
+				[data-fn="step-navi"] [data-depth="2"] [data-val] [data-icon="1"],
+				[data-fn="step-navi"] [data-depth="2"] [data-val] [data-icon="2"],
+				[data-fn="step-navi"] [data-depth="2"] [data-val] [data-icon="3"]{
+					background-color:#b73e91;
+				}
+				
+				[data-fn="step-navi"] [data-depth="2"] [data-val] [data-icon="4"],
+				[data-fn="step-navi"] [data-depth="2"] [data-val] [data-icon="5"],
+				[data-fn="step-navi"] [data-depth="2"] [data-val] [data-icon="6"],
+				[data-fn="step-navi"] [data-depth="2"] [data-val] [data-icon="7"]{
+					background-color:#04a569;
+				}
+				
+				[data-fn="step-navi"] [data-depth="2"] [data-val] [data-icon="8"],
+				[data-fn="step-navi"] [data-depth="2"] [data-val] [data-icon="9"],
+				[data-fn="step-navi"] [data-depth="2"] [data-val] [data-icon="10"]{
+					background-color:#eb6100;
+				}
+				
+				[data-fn="step-navi"] [data-depth="2"] [data-val] [data-icon="11"],
+				[data-fn="step-navi"] [data-depth="2"] [data-val] [data-icon="12"],
+				[data-fn="step-navi"] [data-depth="2"] [data-val] [data-icon="13"]{
+					background-color:#01a9d5;
+				}
+			
+[data-fn="step-navi"] [data-depth="3"]{
+	left:738px; top:113px;
+	width:1134px; height:68px;
+	background-color:#fff;
+	border-radius:50px;
+}
+	[data-fn="step-navi"] [data-depth="3"]>.select{
+		width:100%; height:100%;
+	}
+		[data-fn="step-navi"] [data-depth="3"] [data-val]{
+			cursor:pointer;
+			width:100%; 
+			height:68px;
+			line-height:72px;
+			
+			font-family:"Aggro";
+			font-size:25px; 
+			font-weight:normal;
+			color:#000;
+		}
+			[data-fn="step-navi"] [data-depth="3"] [data-val] [data-icon]{
+				position:relative;
+				
+				display:inline-block;
+				top:16px; 
+				
+				width:120px;
+				height:38px;
+				letter-spacing: -1px;
+				font-family:"Aggro";
+				font-size:22px;
+				font-weight:100;
+				text-align:center;
+				
+				line-height:42px; 
+				margin:0px 12px 0px 20px; 
+				padding:0px 20px; 
+				
+				color:#fff;
+				border-radius:30px;
+				background-color:#00bcd4;
+			}
+			/*아이콘 설정*/
+			[data-fn="step-navi"] [data-depth="3"] [data-val] .step{
+				position:relative;
+				margin:0px 10px 0px 15px; top:9px; 
+				padding:0px 25px;
+				display:inline-block;
+				height:32px;
+				line-height:34px; 
+				
+				font-size:18px; 
+				font-weight:900;
+				text-align:center;
+				color:#1c1c1c;
+				
+				background-color:#a4efad;
+				border-radius:30px;
+			}
+	
+
+[data-fn="step-navi"] [data-depth="2"]>.select:after,
+[data-fn="step-navi"] [data-depth="3"]>.select:after{
+	cursor:pointer;
+	content:'';
+	display:inline-block;
+	width:25px; height:13px;
+	background-image:url('./../ui/btns/btn-down.png');
+	background-size:200% 100%;
+	position:absolute;
+	right:20px; top:30px;
+}
+[data-fn="step-navi"] [data-depth="2"]>.select:hover:after,
+[data-fn="step-navi"] [data-depth="3"]>.select:hover:after{
+	background-position-x:100%;
+}
+[data-fn="step-navi"] [data-depth="2"].on>.select:after,
+[data-fn="step-navi"] [data-depth="3"].on>.select:after{
+	background-image:url('./../ui/btns/btn-up.png');
+}

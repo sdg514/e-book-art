@@ -1,0 +1,31 @@
+
+#plugin{
+	width:672px; height:650px;
+}
+
+#help-head{
+	background-color:#b73f91;
+	border-radius:15px 15px 0px 0px;
+}
+	#help-head>p{
+		width:100%; height:50px;
+		font-size:20px;
+        font-weight: bold;
+		line-height:50px;
+		color:#fff;
+		text-indent:20px;
+	}
+	#help-head>[data-btn="close"]{
+		cursor:pointer;
+		width:30px; height:30px;
+		position:absolute; right:10px; top:10px;
+		background-image: url('img/btn-close.png');
+	}
+	
+	
+#help-body{
+	width:672px; height:600px;
+}
+	#help-body>img{
+		width:100%; height:100%;
+	}

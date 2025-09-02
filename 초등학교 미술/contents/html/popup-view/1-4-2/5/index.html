@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--COMMON CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+    <!--COMMON JS-->
+    <script type="text/javascript" src="../../../../com/js/module.exe.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.util.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.fn.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.media.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.quiz.js" ></script>
+    <!-- VIEW SRC-->
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+    <script type="text/javascript" src="../../[src]/js/popup.skill.js" ></script>
+    <script type="text/javascript" src="../../[src]/js/popup.view.js" ></script>
+    <!-- VIEW -->
+    <!--link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js" ></script-->
+</head>
+
+<body>
+	
+	<main id="popup-view" data-design="">
+		
+		<header>
+			<!--주제-->
+	    	<h1 data-subject="마무리하기">
+	    		<span>마무리하기</span>
+	    		<span>찍은 사진을 한데 모아 사진집을 만들고 친구들에게 소개해<br/> 봅시다.</span>
+	    	</h1>
+		</header>
+
+		<div data-skill="tab">
+	    	
+	    	<div data-tab="1">
+
+				<div data-ui="Ta:c">
+					<div data-box="이미지" data-ui="mt:250">
+						<img src="res/img1.png" data-ui="h:350"/>
+						<!--이미지 정보 표시 - 중앙정렬-->
+						<p data-note="그림-c">
+							<b>박재윤</b> (학생 작품) <b>「즐거운 학교생활」</b><br/>(색지에 사진, 사인펜/18×45 cm)</p>
+					</div>
+					<div data-box="이미지" data-ui="ml:150 mt:50">						
+						<img src="res/img2.png" data-ui="h:550"/>
+						<!--이미지 정보 표시 - 중앙정렬-->
+						<p data-note="그림-c">
+							<b>신준호</b>(학생 작품) <b>「내 친구들」</b><br/> (종이책에 사진, 사인펜, 색지/ 17×24 cm)</p>
+					</div>
+				</div>
+				
+				<!--클릭 보기-->
+				<div data-skill="show" data-ui="P:a l:181 t:74">						
+				
+					<img src="res/cha_1.png" data-ui="h:200">
+					<!--보여질 대상 : 말풍선-->
+					<div data-show="" 
+						data-box="말풍선" 
+						data-color="연녹" 
+						data-ui="P:a x:252 y:-87 w:560">
+						
+						<p data-ui="Ta:c F:KNPS Fs:60 LH:70">친구들의 작품을 살펴보고 만들 방법을 정해 보자!</p>
+						
+						<!--말풍선 꼬리-->
+						<div data-tail="lb" data-ui=""></div>
+					</div>
+					
+					<!--클릭 보기 버튼-->
+					<div data-btn="show" data-sound="./res/4-23P-1.mp3"  data-ui="P:a x:217 y:46">정답</div>
+					
+				</div>
+			</div>
+
+			<div data-tab="2">
+
+				<div data-ui="Ta:c mt:70">
+					<div data-box="이미지" data-ui="">
+						<img src="res/img3.png" data-ui="h:650"/>
+						<div data-ui="Fw:b">
+							<p data-ui="P:a x:80 y:47">학급 누리집</p>
+							<p data-ui="P:a x:40 y:109">재윤이가 찍은 현장 학습 사진입니다.</p>
+						</div>
+					</div>
+					<div data-box="이미지" data-ui="mt:200">
+						<img src="res/img4.png" data-ui="h:450"/>
+						<div data-ui="Fw:b P:a x:91 y:188 Fs:40">
+							<p>시현</p>
+							<p data-ui="mt:42">현서</p>
+							<p data-ui="mt:40">윤하</p>
+						</div>
+					</div>
+				</div>
+
+				<!--클릭 보기-->
+				<div data-skill="show" data-ui="P:a l:919 t:448">
+					<div data-btn="show">정답</div>
+					<div data-show="">	
+						<p data-ui="F:KNPS Fs:40">정말 재미있었어.</p>
+					</div>
+				</div>
+				<!--클릭 보기-->
+				<div data-skill="show" data-ui="P:a l:919 t:538">
+					<div data-btn="show">정답</div>
+					<div data-show="">	
+						<p data-ui="F:KNPS Fs:40">친구들 표정이 생생하게 담겨 있어!</p>
+					</div>
+				</div>
+				<!--클릭 보기-->
+				<div data-skill="show" data-ui="P:a l:919 t:625">
+					<div data-btn="show">정답</div>
+					<div data-show="">	
+						<p data-ui="F:KNPS Fs:40">자연과 문화유산이 잘 어우러지게 나왔어.</p>
+					</div>
+				</div>
+				
+				<!--클릭 보기-->
+				<div data-skill="show" data-ui="P:a l:726 t:136">						
+				
+					<img src="res/ch-1.png" data-ui="h:150">
+					<!--보여질 대상 : 말풍선-->
+					<div data-show="" 
+						data-box="말풍선" 
+						data-color="연녹" 
+						data-ui="P:a x:252 y:-87 w:530">
+						
+						<p data-ui="Ta:c F:KNPS Fs:60 LH:70">친구의 사진에 댓글을 남겨 볼까? </p>
+						
+						<!--말풍선 꼬리-->
+						<div data-tail="lb" data-ui=""></div>
+					</div>
+					
+					<!--클릭 보기 버튼-->
+					<div data-btn="show" data-sound="./res/4-23P-2.mp3"  data-ui="P:a x:217 y:46">정답</div>
+					
+				</div>
+			</div>
+	    	
+		</div>
+		
+	</main>
+	
+</body>
+</html>
+

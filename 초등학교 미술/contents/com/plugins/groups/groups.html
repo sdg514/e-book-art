@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="ko" id="html">
+<head>
+    <meta charset="UTF-8"/>
+    <!-- COMMON CSS -->
+    <link rel="stylesheet" type="text/css" href="../../css/module.reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/module.ui.css"/>
+    <!-- COMMON JS -->
+    <script type="text/javascript" src="../../js/module.exe.js"></script>
+    <script type="text/javascript" src="../../js/module.util.js"></script>
+	<!-- VIEW -->
+	<link type="text/css" rel="stylesheet" href="groups.css"/>
+	<script type="text/javascript" src="groups.js" ></script>
+</head>
+<body>
+	<div id="plugin">
+	    <!--닫기 기능 -->
+		<div data-btn="close"></div>
+		<!--상단 기능 -->
+		<div id="head">
+			<div data-count="">
+				<div data-btn="down"></div>
+				<div data-max="5">5</div>
+				<div data-btn="up"></div>
+			</div>
+			<!--div data-btn="make">활동판 만들기</div-->
+			<div data-btn="result">결과 보기</div>
+		</div>
+		<!--그룹 판-->
+		<div id="content">
+			<div class="container"></div>
+		</div>
+		<!--별점 추가 팝업-->
+		<div id="adder">
+			<div>
+				<div class="head">
+					<p>원하는 별점을 선택하세요.</p>
+					<div data-btn="close-adder"></div>
+				</div>
+				<div class="body">
+				    <div data-add="1"><span>1점</span></div>
+                    <div data-add="5"><span>5점</span></div>
+                    <div data-add="10"><span>10점</span></div>
+				</div>
+			</div>
+		</div>
+		<!--그룹 결과 팝업-->
+		<div id="result">
+			<div>
+				<div data-btn="close-result">다시 하기</div>
+				<div class="body">
+				    <div class="score"></div>
+					<div class="winner"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

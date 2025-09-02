@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--COMMON CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+    <!--COMMON JS-->
+    <script type="text/javascript" src="../../../../com/js/module.exe.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.util.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.fn.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.media.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.quiz.js" ></script>
+    <!-- VIEW SRC-->
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+    <script type="text/javascript" src="../../[src]/js/popup.skill.js" ></script>
+    <script type="text/javascript" src="../../[src]/js/popup.view.js" ></script>
+    <!-- VIEW -->
+    <!--link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js" ></script-->
+</head>
+
+<body>
+	
+	<main id="popup-view" data-design="">
+		<div data-skill="tab">
+			<div data-tab="1">
+				<header>
+					<!--주제-->
+					<h1 data-subject="활동하기1">
+						<span>활동하기1</span>
+						<span>자벌레의 눈으로 마을 기록가가 되어 관찰해 봅시다.</span>
+					</h1>
+				</header>
+				
+				<div data-ui="P:r mt:55 ml:0">
+					<div data-box="이미지">
+						<img src="res/img0.png" data-ui="w:500"/>						
+					</div>
+					<div data-ui="B:3px,dashed,#aa9d92 w:980 h:495 Br:30"></div>
+				</div>
+
+				<!--클릭 보기-->
+				<div data-skill="show" data-ui="P:a l:292 t:650">
+					
+					<!--보여질 대상-->
+					<div data-show="" 						
+						data-ui="P:a x:-280 y:-345 w:980 Fw:bold LH:60">
+						
+						<p data-ui="Fs:45"><span data-note="①"></span> <span data-ui="D:ib w:846">우리 학교와 집 주변의 안전한 골목길 선택하기 (차가 다니지 않는 골목길, 시장, 공원 등)</span></p>
+						<p data-ui="Fs:45 mt:20"><span data-note="②"></span> <span data-ui="D:ib w:846">선택한 장소에서 활동지의 빈칸을 활용해 골목의 땅과 길, 건물 등을 구석구석 관찰하기</span></p>
+						<p data-ui="Fs:45 mt:20"><span data-note="③"></span> <span data-ui="D:ib w:846">관찰한 마을의 여기저기를 그림으로 그리거나 사진으로 찍어서 친구들과 함께 모으기</span></p>						
+						
+					</div>
+					
+					<!--클릭 보기 버튼-->
+					<div data-btn="show"  data-ui="P:a x:169 y:-188">정답</div>
+					
+				</div>
+
+				<!--클릭 보기-->
+				<div data-skill="show" data-ui="P:a r:20 t:645">
+						
+					<img src="res/img1.png" alt="자벌레 케릭터" data-ui="w:530"/>
+					
+					<!--보여질 대상 : 말풍선-->
+					<div data-show="" 
+						data-box="말풍선" 
+						data-color="연녹" 
+						data-ui="P:a x:-212 y:-384 w:785">
+						
+						<p data-ui="Ta:c F:KNPS Fs:50 LH:70">‘자벌레’는 꼭 자로 재는 것처럼 기어다닌다고 해서 붙인 이름이야. 일상의 작은 것들을 세밀하게 관찰하는 마을 기록가의 행동을 닮았지.</p>
+						
+						<!--말풍선 꼬리-->
+						<div data-tail="br" data-ui="t:252 l:316"></div>
+					</div>
+					
+					<!--클릭 보기 버튼-->
+					<div data-btn="show" data-sound="./res/3-17P-1(자벌레캐릭터).mp3" data-ui="P:a x:178 y:-86">정답</div>
+					
+				</div>
+			</div>
+
+			<div data-tab="2">
+				<header>
+					<!--주제-->
+					<h1 data-subject="활동하기1">
+						<span>활동하기1</span>
+						<span>자벌레의 눈으로 마을 기록가가 되어 관찰해 봅시다.</span>
+					</h1>
+				</header>
+
+				<div data-ui="">
+					<div data-box="이미지">
+						<img src="res/활동이_빼꼼.png" alt="활동이_빼꼼" data-ui="w:400 P:a x:848 y:269"/>
+						<img src="res/img2.png" data-ui="w:900 P:r x:100 y:0"/>	
+						
+						<quizBtn data-id="q-1" 
+								data-skill="exReset" 
+								data-ui="P:a x:800 y:666">
+								<p>예시 답안</p>
+						</quizBtn>					
+					</div>
+				</div>			
+
+				<quizItem data-id="q-1" data-ui="P:a x:556 y:856">
+					<!--쓰기-->
+					<assessmentItem data-response-type="essay" >
+						<!-- <itemBody data-input="" data-ui="m:0 P:a x:-5 y:-5">
+							<textarea placeHolder="직접 써 보세요." data-ui="mt:20 ml:50 w:1400 h:300"></textarea>
+						</itemBody> -->
+						<assessFeedback>
+							<p data-ui="Fc:#4c65fe F:'Nanum' Fw:b Fs:25">거칠거칠해요.</p>
+						</assessFeedback>
+					</assessmentItem>					
+				</quizItem>
+
+				<!--클릭 보기-->
+				<div data-skill="show" data-ui="P:a l:550 t:450">
+					
+					<!--보여질 대상 : 말풍선-->
+					<div data-show="" 
+						data-box="말풍선" 
+						data-color="연녹" 
+						data-ui="P:a x:577 y:-245 w:445">
+						
+						<p data-ui="Ta:c F:KNPS Fs:50 LH:70">마을에서 발견한 것을 빈칸에 쓰고 친구들과 함께 이야기해 봐. </p>
+						
+						<!--말풍선 꼬리-->
+						<div data-tail="bl" data-ui=""></div>
+					</div>
+					
+					<!--클릭 보기 버튼-->
+					<div data-btn="show" data-sound="./res/3-17P-2.mp3" data-ui="P:a x:680 y:63">정답</div>
+					
+				</div>
+			</div>
+		</div>
+	</main>
+	
+</body>
+</html>
+

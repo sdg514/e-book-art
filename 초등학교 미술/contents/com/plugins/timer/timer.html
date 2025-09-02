@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="ko" id="html">
+<head>
+    <meta charset="UTF-8"/>
+    <!-- COMMON CSS -->
+    <link rel="stylesheet" type="text/css" href="../../css/module.reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/module.ui.css"/>
+    <!-- COMMON JS -->
+    <script type="text/javascript" src="../../js/module.exe.js"></script>
+    <script type="text/javascript" src="../../js/module.util.js"></script>
+	<!-- VIEW -->
+	<link type="text/css" rel="stylesheet" href="timer.css"/>
+	<script type="text/javascript" src="timer.js" ></script>
+</head>
+<body>
+	<div id="plugin">
+		<div id="timer">
+		    
+		    <div data-btn="close"></div>
+		    
+		    <!--시간 표시-->
+            <div id="time-text">
+                <div id="min">00</div>
+                <div id="sec">00</div>
+            </div>
+            <!--시간 선택-->
+            <div id="time-change">
+                <div id="min-box">
+                    <div data-btn="up" data-limit="60"></div>
+                    <div data-btn="down" data-limit="-60"></div>
+                </div>
+                <div id="sec-box">
+                    <div data-btn="up" data-limit="10"></div>
+                    <div data-btn="down" data-limit="-10"></div>
+                </div>
+                <ul id="section-box">
+                    <li data-btn="section" data-limit="30"></li>
+                    <li data-btn="section" data-limit="60"></li>
+                    <li data-btn="section" data-limit="180"></li>
+                    <li data-btn="section" data-limit="300"></li>
+                </ul>
+            </div>
+            <!--버튼 기능-->
+            <div id="time-controls">
+                <div data-btn="stop"></div>
+                <div data-btn="start"></div>
+                <div data-btn="reset"></div>
+            </div>
+		</div>
+	</div>
+</body>
+</html>
+

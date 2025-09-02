@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--COMMON CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+    <!--COMMON JS-->
+    <script type="text/javascript" src="../../../../com/js/module.exe.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.util.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.fn.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.media.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.quiz.js" ></script>
+    <!-- VIEW SRC-->
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+    <script type="text/javascript" src="../../[src]/js/popup.skill.js" ></script>
+    <script type="text/javascript" src="../../[src]/js/popup.view.js" ></script>
+    <!-- VIEW -->
+    <!--link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js" ></script-->
+</head>
+
+<body>
+	
+	<main id="popup-view" data-design="">
+		
+		<header>
+			<!--주제-->
+	    	<h1 data-subject="돌아보기">
+	    		<span>돌아보기</span>
+	    		<span>활동 돌아보고 이야기 나누기</span>
+	    	</h1>
+		</header>
+		
+	    <section>
+	    	
+	    	<!--클릭 보기-->
+	    	<div data-skill="show" data-ui="P:a l:80 t:180">
+            	
+            	<img src="res/cha_1.png" alt="여우"/>
+            	
+            	<!--보여질 대상 : 말풍선-->
+    			<div data-show="" 
+    				data-box="말풍선" 
+    				data-color="노랑" 
+    				data-ui="P:a x:320 y:-170 w:502">
+    				
+                	<p data-ui="Ta:c F:KNPS Fs:60 LH:70">오늘의 활동에 대해<br/>이야기해 보자.</p>
+                	
+                	<!--말풍선 꼬리-->
+                	<div data-tail="bl" data-ui="x:85"></div>
+                </div>
+                
+            	<!--클릭 보기 버튼-->
+            	<div data-btn="show" data-sound="./res/1-9P-3.mp3" data-ui="P:a x:450 y:75">정답</div>
+            	
+            </div>
+	    	
+	    	<!--퀴즈 -->
+			<quizItem data-id="q-1">
+
+				<!--퀴즈 버튼-->
+				<quizBtn data-id="q-1" data-skill="exReset" data-ui="P:a r:12 y:180">예시 답안</quizBtn>
+
+				<!--말풍선-->
+				<div data-box="말풍선" data-ui="w:1100 h:420 P:a l:650 t:260 F:'KNPS' Fs:42 LH:60 Fc:#757575">
+					<!--쓰기 기능 -->
+					<assessmentItem data-response-type="essay" data-essay="">
+						
+						<itemBody>
+							<textarea placeHolder="직접 써 보세요." data-ui="ml:54 w:982 h:358"></textarea>
+						</itemBody>
+						
+						<assessFeedback>
+							<p data-ui="ml:54 w:982 Fc:#4c65fe F:'Nanum' Fw:b LS:-1">다양한 색을 만들어서 직접 이름을 붙여 보니 많은 색을 알게 되었어요.</p>							
+						</assessFeedback>
+					
+					</assessmentItem>					
+					
+					<!--말풍선 꼬리-->
+					<div data-tail="br"></div>
+				</div>
+			</quizItem>
+
+			<style>
+				[data-box="말풍선"]>[data-essay]:before {
+					content: '';
+					display: inline-block;
+					width: 50px;
+					height: 50px;
+					position: absolute;
+					left: 22px;
+					top: 30px;
+					background-image: url(../../[res]/icons/연필.png);
+				}
+			</style>
+	    </section>
+	    
+	</main>
+	
+</body>
+</html>
+

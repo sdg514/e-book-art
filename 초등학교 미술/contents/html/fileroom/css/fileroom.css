@@ -1,0 +1,349 @@
+/*================================================
+ * 배경 설정
+ ================================================*/
+#screen {
+	background-image: url('./../ui/bg.png');
+}
+
+#content>header {}
+
+	header [data-btn="close"] {
+		position: absolute;
+		left: 1787px;
+		top: 40px;
+		width: 62px;
+		height: 63px;
+		background-image: url('./../ui/btns/btn-close.png');
+	}
+
+#chap_nav button {
+	position: absolute;
+	top: 177px;
+	font-size: 0px;
+}
+
+#chap_nav button:nth-child(1) {
+	background-image: url('../ui/btns/chap_1.png');
+    width: 432px;
+	height: 92px;
+	left: 944px;
+}
+
+#chap_nav button:nth-child(2) {
+	background-image: url('../ui/btns/chap_2.png');
+    width: 404px;
+	height: 92px;
+	left: 1390px;
+} 
+
+#view div[table] {
+	width: 1712px;
+	position: absolute;
+	left: 103px;
+	top: 312px;
+}
+
+
+#view div[table="1"] {
+	height: 500px;
+	background: url('../ui/table_1.png') 0 0 no-repeat;
+	background-size: 100%;
+}
+
+#view div[table="2"] {
+	height: 500px;
+	background: url('../ui/table_2.png') 0 0 no-repeat;
+	background-size: 100%;
+}
+
+#view div[table="3"] {
+	height: 500px;
+	background: url('../ui/table_3.png') 0 0 no-repeat;
+	background-size: 100%;
+}
+
+#view div[table="4"] {
+	height: 598px;
+	background: url('../ui/table_4.png') 0 0 no-repeat;
+	background-size: 100%;
+}
+
+.lesson_wrap {
+	width: 600px; height: 100%; 
+}
+
+	.lesson_wrap .lesson {
+		position: absolute; 
+		width: 600px; height: auto;
+		background-color: #fdf4c8;
+		border-radius: 8px;
+		font-size: 28px; 
+		line-height: 100px; padding: 0px 20px;
+		cursor: pointer; z-index: 2;
+	}
+
+	.lesson_wrap .lesson p {
+		font-family: 'Aggro';
+		height: 100px; letter-spacing: -1.7px;
+	}
+		.lesson_wrap .lesson p::after {
+			content: ''; 
+			width: 24px; height: 14px;
+			position: absolute; top:45px; right: 32px;
+			background: url('../ui/btns/arrow.png') 0 0 no-repeat;
+			background-size: 200% 100%;
+			line-height: 100px;
+		} 
+		.lesson_wrap .lesson p.on::after {
+			background-position-x: 100%;
+			color:#fff; 
+		}
+
+		.lesson_wrap .lesson span {
+			display: inline-block;
+			width: 32px; height: 32px; 
+			font-family: 'KNPS'; color:#fff;  
+			text-align: center; line-height: 25px;
+			padding-top: 5px;
+			border-radius: 50px; 
+			margin-right: 12px;
+			pointer-events: none;
+		}
+			.lesson_wrap .lesson p > span {  
+				transform: translateY(100%);
+			}
+			.lesson_wrap .lesson li > span {  
+				transform: translateY(12px);
+			} 
+			.lesson_wrap .lesson span[idx="1"],
+			.lesson_wrap .lesson span[idx="2"],
+			.lesson_wrap .lesson span[idx="3"]{
+				background: #b73e91;
+			}
+			.lesson_wrap .lesson span[idx="4"],
+			.lesson_wrap .lesson span[idx="5"],
+			.lesson_wrap .lesson span[idx="6"],
+			.lesson_wrap .lesson span[idx="7"]{
+				background: #04a569;
+			}
+			.lesson_wrap .lesson span[idx="8"],
+			.lesson_wrap .lesson span[idx="9"],
+			.lesson_wrap .lesson span[idx="10"]{
+				background: #eb6100;
+			}
+			.lesson_wrap .lesson span[idx="11"],
+			.lesson_wrap .lesson span[idx="12"],
+			.lesson_wrap .lesson span[idx="13"]{
+				background: #01a9d5;
+			}
+			[chap="0"] .lesson_wrap .lesson span[idx="·"]{
+				font-size: 0px;
+				width: 14px; height: 14px;
+				background: #c486ac;
+				transform: translateY(20px);
+				margin:0px 20px 0px 10px;
+			}
+				[chap="0"] .lesson_wrap .lesson p span[idx="·"]{
+					transform: translateY(40px);
+				}
+			[chap="1"] .lesson_wrap .lesson span[idx="·"]{
+				font-size: 0px;
+				width: 14px; height: 14px;
+				background: #c3d714;
+				transform: translateY(20px);
+				margin:0px 20px 0px 10px;
+			}
+				[chap="1"] .lesson_wrap .lesson p span[idx="·"] {
+					transform: translateY(40px); 
+				}
+	.lesson_wrap .lesson ul {
+		display: none;
+	}
+
+	.lesson_wrap .lesson li {
+		width: 530px;height: 62px;
+		line-height: 62px; 
+		box-sizing: border-box;
+		font-family: 'Aggro';letter-spacing: -1.7px;
+	}
+
+	.lesson_wrap .lesson li:hover {
+		color: #0d47a1;
+	}
+
+	.lesson_wrap .class {
+		position: absolute;
+		top: 180px; 
+		width: 600px; height: auto;
+	}
+		.lesson_wrap .class_name  > div{
+			display: table;
+		}
+		.lesson_wrap .class_name > div p{
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		.lesson_wrap .class_num {
+			display: inline-block;
+			width: 116px;
+			height: 100%;
+			font-size: 16px;
+			text-align: center;
+		}
+
+		.lesson_wrap .class_num p {
+			display: inline-block;
+			width: 80px; height: 30px;
+			border-radius: 15px;
+			background: #00bcd4 center no-repeat;
+			background-size: 110px 30px;
+			text-align: center; line-height: 30px;
+			margin: 37px 0px; color:#fff;
+		}
+					[table="2"] .lesson_wrap .class_num p {
+						display: inline-block;
+						width: 80px;
+						height: 30px;
+						border-radius: 15px;
+						background: #00bcd4 center no-repeat;
+						background-size: 110px 30px;
+						text-align: center;
+						line-height: 30px;
+						margin:65px 0px;
+						color: #fff;
+					}
+
+		.lesson_wrap .class_name {
+			display: inline-block;
+			width: 476px; height: 100%;
+			font-size: 20px;
+		}
+
+		.lesson_wrap .class_name p {
+			width: 446px;
+			height: 108px;
+			/* line-height: 101px; */
+			padding-left: 20px;
+		}
+			[table="2"] .lesson_wrap .class_name p {
+				width: 446px;
+				height: 163px; 
+				padding-left: 20px;
+			}
+
+
+
+.file_wrap {
+	position: absolute;
+	top: 182px;
+	left: 602px;
+	width: 1112px;
+	height: auto;
+}
+
+.file_wrap>div { 
+	width: 185px;
+	height: auto;
+	float: left;
+}
+
+.file_wrap>div:nth-child(1),
+.file_wrap>div:nth-child(2),
+.file_wrap>div:nth-child(3),
+.file_wrap>div:nth-child(4),
+.file_wrap>div:nth-child(5) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.file_wrap>div>div { 
+	position: relative;
+	width: 185px;
+	height: 105px;
+	text-align: center;
+}
+	.file_wrap [category="교과서"]>div,
+	.file_wrap [category="지도서 활동지"]>div,
+	.file_wrap [category="날말 퀴즈"]>div,
+	.file_wrap [category="학기 지도 계획(안)"]>div,
+	.file_wrap [category="수업 도우미"]>div{ 
+		height: auto; 
+		display: table-cell; vertical-align: middle;
+	}
+	[table="2"] .file_wrap>div>div { 
+		height: 162px; 
+	}
+	 [table="2"] .file_wrap [category="수업 도우미"] > div{
+		height: auto !important;
+	}
+ .file_wrap [category="수업 도우미"]{
+	display: table; margin: 0 auto;
+ }
+	.file_wrap [category="수업 도우미"] a{
+		display: block;  text-align: center;
+		line-height: 30px; margin-top: 0px;
+		margin-left: 75px;
+		position:static;
+		transform:none;
+	}
+	.file_wrap [category="수업 도우미"] p{
+		display: block; font-size: 20px;
+		width: 100%; margin: 10px 0 15px;
+		position:static;
+		transform:none;
+	}
+ 
+
+/* 파일 다운 아이콘 */
+a[data-icon] { 
+	width: 36px;
+	height: 36px;
+	position:absolute;left:50%;top:50%;
+	transform:translate(-50%,-50%);
+} 
+	
+	[table="2"] a[data-icon] {
+		width: 36px;
+		height: 36px;
+	} 
+	
+	[table="2"] [category="교과서"],
+	[table="2"] [category="지도서 활동지"],
+	[table="2"] [category="날말 퀴즈"],
+	[table="2"] [category="학기 지도 계획(안)"]{
+		margin-top: 80px;
+	} 
+
+	[table="2"] [category="교과서"] a[data-icon],
+	[table="2"] [category="지도서 활동지"] a[data-icon],
+	[table="2"] [category="날말 퀴즈"] a[data-icon],
+	[table="2"] [category="학기 지도 계획(안)"] a[data-icon],
+	[table="2"] [category="수업 도우미"] a[data-icon] {
+		width: 36px;
+		height: 36px;
+		margin-top: 0px;
+	} 
+	
+.file_wrap>div>div span{
+	position: absolute;
+	bottom: 10px; left: 0px;
+	width: 100%; font-size: 20px;
+}
+
+a[data-icon="hwp"] {
+	background: url('../ui/btns/hwp_icon.png') center no-repeat;
+	background-size: 36px;
+}
+
+a[data-icon="pdf"] {
+	background: url('../ui/btns/pdf_icon.png') center no-repeat;
+	background-size: 36px;
+}
+
+a[data-icon="ppt"] {
+	background: url('../ui/btns/ppt_icon.png') center no-repeat;
+	background-size: 36px; 
+}

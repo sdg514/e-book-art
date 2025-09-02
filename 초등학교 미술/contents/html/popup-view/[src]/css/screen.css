@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/**================================
+ * @date: 2024-06-13
+ * @description: 사용자 설정 부분
+ * @copyright: 김동근
+ * @version:1.0
+ =================================**/
+
+ [data-subject="마무리하기"]>*:nth-child(1) {
+    width: 212px;
+    height: 151px;
+    background-image: url(../../[res]/titles/마무리하기.png);
+}
+
+[data-subject="마무리하기"]>*:nth-child(1) {
+    z-index: 10;
+    content: '';
+    display: inline-block;
+    font-size: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+[data-subject="마무리하기"] {
+    padding-left: 130px;
+    line-height: 76px;
+    padding-top: 15px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+[data-subject="마무리하기"]>*:nth-child(2) {
+    position: relative;
+    display: inline-block;
+    height: 76px;
+    padding: 5px 50px 0px 100px;
+    font-family: 'Aggro';
+    font-size: 54px;
+    font-weight: normal;
+    line-height: 76px;
+    border-radius: 0px 50px 50px 0px;
+}
+
+[data-note="그림-a"],
+[data-note="그림-b"],
+[data-note="그림-d"]{
+    position:relative;
+    font-size:28px;
+    line-height:40px;
+    text-align:center;
+}
+    [data-note="그림-a"]>*:nth-child(1):before{
+        content:'';
+        display:inline-block;
+        width:32px;height:26px;
+        background-image:url('../../[res]/icons/icon-용어설명a.png');
+        margin-right:15px;
+        position:relative;top:5px;
+    }
+    [data-note="그림-b"]>*:nth-child(1):before{
+        content:'';
+        display:inline-block;
+        width:32px;height:38px;
+        background-image:url('../../[res]/icons/icon-용어설명b.png');
+        margin-right:15px;
+        position:relative;top:5px;
+    }
+    [data-note="그림-d"]>*:nth-child(2):after{
+        content:'';
+        display:inline-block;
+        width:32px;height:38px;
+        background-image:url('../../[res]/icons/icon-용어설명d.png');
+        margin-left:15px;
+        position:relative;top:5px;
+    }
+    
+[data-note="그림-a"] b,
+[data-note="그림-b"] b,
+[data-note="그림-d"] b{
+    font-weight:900;
+}
+
+
+

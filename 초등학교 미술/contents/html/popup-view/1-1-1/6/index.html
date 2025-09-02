@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--COMMON CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+    <!--COMMON JS-->
+    <script type="text/javascript" src="../../../../com/js/module.exe.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.util.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.fn.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.media.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.quiz.js" ></script>
+    <!-- VIEW SRC-->
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+    <script type="text/javascript" src="../../[src]/js/popup.skill.js" ></script>
+    <script type="text/javascript" src="../../[src]/js/popup.view.js" ></script>
+    <!-- VIEW -->
+    <!--link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js" ></script-->
+</head>
+
+<body>
+	
+	<main id="popup-view" data-design="">
+		
+		<header>
+	    	<!--주제-->
+	    	<h1 data-subject="활동하기1">
+	    		<span>활동하기1</span>
+	    		<span data-ui="Fc:#000000 BGc:inherit">색상환 속 색의 관계에 대해 알아봅시다.</span>
+	    	</h1>
+	    	
+	    </header>
+	    
+	    <div data-skill="tab">
+	    	  
+	    	<div data-tab="1">
+			    <!--클릭 보기-->
+				<div data-skill="show" data-ui="P:a l:1520 t:-13">
+            	
+					<img src="./res/활동이_달리기.png" alt="활동이_달리기" data-ui="w:250"/>
+					
+					<!--보여질 대상 : 말풍선-->
+					<div data-show="" data-box="말풍선" data-color="연녹" data-ui="P:a x:-750 y:-32 w:690">
+						
+						<p data-ui="Ta:c F:KNPS Fs:50 LH:60 LS:-2">색상환에서 가까이에 있는 색은 비슷한 색이고 마주 보고 있는 색은 반대색이야. </p>
+						
+						<!--말풍선 꼬리-->
+						<div data-tail="rb" data-ui="x:673 t:49"></div>
+					</div>
+					
+					<!--클릭 보기 버튼-->
+					<div data-btn="show" data-sound="./res/1-9P-4.mp3" data-ui="P:a x:-49 y:-8">정답</div>
+					
+				</div>
+	    		<!--점선 박스-->
+	    		<div data-box="점선" data-ui="mt:150">
+	    			
+	    			<!--박스 제목-->
+	    			<div data-title="">비슷한 색 붙이기</div>
+	    			
+	    			<!--퀴즈-->
+			    	<quizItem data-id="q-1" data-ui="Ta:c">
+			    		
+			    		<div data-ui="P:r D:ib">
+			    			
+			    			<img src="res/img_1.png" />
+			    			
+			    			<!--퀴즈 피드백-->
+							<quizFeedback data-ui="P:a l:0 t:0">
+								<img src="res/img_1_ex.png" />
+							</quizFeedback>
+			    		</div>
+			    		
+			    		<!--퀴즈 버튼-->
+						<quizBtn data-id="q-1" 
+							data-skill="exReset" 
+							data-ui="P:a r:-50 b:-140">
+							<span>예시 답안</span>
+						</quizBtn>
+						
+			        </quizItem>
+		        </div>
+		        
+	    	</div>
+	    	
+	    	<div data-tab="2">
+	    		
+		        <!--점선 박스-->
+	    		<div data-box="점선" data-ui="mt:150">
+	    			
+	    			<!--박스 제목-->
+	    			<div data-title="">반대색 붙이기</div>
+	    			
+	    			<!--퀴즈-->
+			    	<quizItem data-id="q-2" data-ui="Ta:c">
+			    		
+			    		<div data-ui="P:r D:ib">
+			    			
+			    			<img src="res/img_2.png" />
+			    			
+			    			<!--퀴즈 피드백-->
+							<quizFeedback data-ui="P:a l:0 t:0">
+								<img src="res/img_2_ex.png" />
+							</quizFeedback>
+			    		</div>
+			    		
+			    		<!--퀴즈 버튼-->
+						<quizBtn data-id="q-2" 
+							data-skill="exReset" 
+							data-ui="P:a r:-50 b:-140">
+							<span>예시 답안</span>
+						</quizBtn>
+						
+			        </quizItem>
+		        </div>
+		        
+	    	</div>
+	    	
+	    	<div data-tab="3">
+
+				<!--클릭 보기-->
+				<div data-skill="show" data-ui="P:a l:1520 t:4">
+            	
+					<img src="../../[res]/chars/궁금이_아하.png" alt="고슴도치" data-ui="w:250"/>
+					
+					<!--보여질 대상 : 말풍선-->
+					<div data-show="" data-box="말풍선" data-color="연녹" data-ui="P:a x:-648 y:-20 w:606">
+						
+						<p data-ui="Ta:c F:KNPS Fs:50 LH:60 LS:-2">두 색을 섞으면 어떤 색이 나올까?</p>
+						
+						<!--말풍선 꼬리-->
+						<div data-tail="rb" data-ui="x:590 t:32"></div>
+					</div>
+					
+					<!--클릭 보기 버튼-->
+					<div data-btn="show" data-sound="./res/1-9P-2.mp3" data-ui="P:a x:-49 y:-8">정답</div>
+					
+				</div>
+	    		
+			    <!--점선 박스-->
+	    		<div data-box="점선" data-ui="mt:202">
+	    			
+	    			<!--박스 제목-->
+	    			<div data-title="">빈칸에 알맞은 색 붙이기</div>
+	    			
+	    			<!--퀴즈-->
+			    	<quizItem data-id="q-3" data-ui="Ta:c">
+			    		
+			    		<div data-ui="P:r D:ib">
+			    			
+			    			<img src="res/img_3.png" />
+			    			
+			    			<!--퀴즈 피드백-->
+							<quizFeedback data-ui="P:a l:905 t:0">
+								<img src="res/img_3_ex.png" />
+							</quizFeedback>
+			    		</div>
+			    		
+			    		<!--퀴즈 버튼-->
+						<quizBtn data-id="q-3" 
+							data-skill="exReset" 
+							data-ui="P:a r:-50 b:-140">
+							<span>예시 답안</span>
+						</quizBtn>
+						
+			        </quizItem>
+		        </div>
+			    
+	    	</div>
+	    </div>
+	    
+	</main>
+	
+</body>
+</html>
+

@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--COMMON CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+    <!--COMMON JS-->
+    <script type="text/javascript" src="../../../../com/js/module.exe.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.util.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.fn.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.media.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.quiz.js" ></script>
+    <!-- VIEW SRC-->
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+    <script type="text/javascript" src="../../[src]/js/popup.skill.js" ></script>
+    <script type="text/javascript" src="../../[src]/js/popup.view.js" ></script>
+    <!-- VIEW -->
+    <!--link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js" ></script-->
+</head>
+
+<body>
+	
+	<main id="popup-view" data-design="">
+		
+		<header>
+			<!--주제-->
+	    	<h1 data-subject="마무리하기">
+	    		<span>마무리하기</span>
+	    		<span>마을에서 경험하고 기록한 것을 모아 이야기를 나눠 봅시다.</span>
+	    	</h1>
+		</header>
+
+		<div data-skill="tab">
+	    	
+	    	<div data-tab="1">
+
+				<div data-ui="P:r mt:50 ml:200">
+					<div data-box="이미지">
+						<img src="res/img1.png" data-ui="h:550"/>
+						<!--이미지 정보 표시 - 중앙정렬-->
+						<p data-note="그림-c">
+							<b>김민 외 23명</b>(학생 협동 작품) <b>「우리 동네 맛 지도」</b><br/>(종이에 색연필, 사인펜, 수채화물감 등/74×104 cm)
+						</p>
+					</div>
+				</div>
+				
+				<!--클릭 보기-->
+				<div data-skill="show" data-ui="P:a l:448 t:270">						
+				
+					
+					<!--보여질 대상 : 말풍선-->
+					<div data-show="" 
+						data-box="말풍선" 
+						data-color="연녹" 
+						data-ui="P:a x:590 y:-249 w:485">
+						
+						<p data-ui="Ta:c F:KNPS Fs:60 LH:70">우리 동네에는 정말 다양한 음식점과 동물이 있어. </p>
+						
+						<!--말풍선 꼬리-->
+						<div data-tail="lb" data-ui=""></div>
+					</div>
+					
+					<!--클릭 보기 버튼-->
+					<div data-btn="show" data-sound="./res/3-19P-1.mp3"  data-ui="P:a x:393 y:-119">정답</div>
+					
+				</div>
+			</div>
+
+			<div data-tab="2">
+
+				<div data-ui="P:r mt:50 ml:850">
+					<div data-box="이미지">
+						<img src="res/img2.png" data-ui="h:550"/>
+						<!--이미지 정보 표시 - 중앙정렬-->
+						<p data-note="그림-c">
+							<b>김서원 외 23명</b>(학생 협동 작품) <b>「우리 마을 동물 그림책」</b><br/> (종이에 색종이, 색지, 색연필 등/27×39×3 cm)
+						</p>
+					</div>
+				</div>
+				
+				<!--클릭 보기-->
+				<div data-skill="show" data-ui="P:a l:475 t:270">						
+				
+					<img src="res/cha_1.png" alt="" data-ui="h:330">
+					<!--보여질 대상 : 말풍선-->
+					<div data-show="" 
+						data-box="말풍선" 
+						data-color="연녹" 
+						data-ui="P:a x:-464 y:-219 w:485">
+						
+						<p data-ui="Ta:c F:KNPS Fs:60 LH:70">마을을 탐색한 친구들의 경험 중 흥미 있는 것을 이야기해 볼까? </p>
+						
+						<!--말풍선 꼬리-->
+						<div data-tail="br" data-ui=""></div>
+					</div>
+					
+					<!--클릭 보기 버튼-->
+					<div data-btn="show" data-sound="./res/3-19P-2.mp3"  data-ui="P:a x:258 y:-5">정답</div>
+					
+				</div>
+			</div>
+	    	
+		</div>
+		
+	</main>
+	
+</body>
+</html>
+

@@ -1,0 +1,299 @@
+/*================================================
+ * 배경 설정
+ ================================================*/
+#screen,
+#screen[data-grade="3"]{background-image:url('./../ui/bg-3.png');}
+#screen[data-grade="4"]{background-image:url('./../ui/bg-4.png');}
+
+/*=======================*/	
+/*=======================*/	
+#content{
+	font-family:'Aggro';
+}
+
+
+/*=======================*/	
+/*=======================*/	
+#logo{
+	position:absolute;left:80px;top:41px;
+	font-size:0px;
+}
+	#logo>h1{
+		display:inline-block;
+	}		
+	#screen[data-grade="3"] #logo>h1{
+		width:282px;height:138px;
+		background-image:url("./../ui/logos/logo-3.png");
+	}
+	#screen[data-grade="4"] #logo>h1{
+		width:280px;height:138px;
+		background-image:url("./../ui/logos/logo-4.png");
+	}
+	
+/*=======================*/	
+/*=======================*/	
+#quick-menu{
+	position:absolute;
+	height:98px;
+	width:auto; height:0;
+	right:50px; top:60px;
+}
+	[data-menu]{
+		cursor:pointer;
+		display:inline-block;
+		height:28px;
+		
+		font-size:34px;
+		
+		color:#000;
+		background-size:200% 100%;
+		padding:0px 20px;
+	}
+		[data-menu]:hover{
+			color:#00a8d5;
+		}
+	
+		[data-menu]+[data-menu]{
+			border-left:3px solid #000;
+		}
+	[data-menu]>p{
+		line-height:34px;
+		position:relative;top:-3px;
+	}	
+	
+	
+/*=======================*/	
+/*=======================*/	
+#quick-book{
+	position:absolute;
+	
+	right:85px; top:120px;
+	border:3px solid #000;
+	border-radius:100px;
+	background-color:#fff;
+	
+	width:200px; height:48px;
+	line-height:48px;
+	
+	font-size:26px;
+	font-weight:100;
+}
+	#quick-book .currect{
+		display:inline-block;
+		width:84px;height:30px;
+		line-height:30px;
+		position:relative;
+		left:6px; top:6px;
+		background-color:#e0e0e0;
+		border-radius:50px;
+		text-align:center;
+		margin-right:6px;
+	}
+		#quick-book .currect>input{
+			position:relative;top:3px;
+			width:100%;
+		}
+	
+	#quick-book button{
+		width:30px;height:30px;
+		font-size:0;
+		background-image:url('./../ui/btns/검색.png');
+		background-size:100% 100%;
+		position:absolute;right:8px; top:6px;
+	}	
+	
+	
+/*=======================*/	
+/*=======================*/	
+#index{
+	position:absolute;left:0px;top:0px;
+	width:100%;height:0;
+}
+	/*=======================*/	
+	/*=======================*/
+	#lesson{
+		position:absolute;left:80px;top:285px;
+		width:525px;
+		text-align:center;
+	}	
+		#lesson [data-lesson]{
+			cursor:pointer;
+			display:inline-block;
+			background-size:200% 100%;
+			font-size:0;
+		}
+			#lesson [data-lesson].on{
+				background-position-x:100%;
+			}
+			#lesson [data-lesson]+[data-lesson]{
+				margin-top:30px;
+			}
+		#screen[data-grade="3"] #lesson [data-lesson]{
+			width:400px;height:105px;
+		}
+			#screen[data-grade="3"] #lesson [data-lesson="1"]{
+				background-image:url("./../ui/btns/lesson3-1.png");
+			}
+			#screen[data-grade="3"] #lesson [data-lesson="2"]{
+				background-image:url("./../ui/btns/lesson3-2.png");
+			}
+		#screen[data-grade="4"] #lesson [data-lesson]{
+			width:457px;height:105px;
+		}
+			#screen[data-grade="4"] #lesson [data-lesson="1"]{
+				background-image:url("./../ui/btns/lesson4-1.png");
+			}
+			#screen[data-grade="4"] #lesson [data-lesson="2"]{
+				background-image:url("./../ui/btns/lesson4-2.png");
+			}
+			
+	/*=======================*/	
+	/*=======================*/
+	#chapter{
+		position:absolute;left:780px;top:280px;
+		width:1080px;
+	}
+	
+	#chapter>li{
+		position:relative;
+	}
+	#chapter>li.on:after{
+		content:'';
+		position:absolute;
+		right:20px; top:20px;
+		width:26px;height:15px;
+		background-image:url("./../ui/btns/arrow-up.png");
+	}
+	
+		#chapter [data-chapter]{
+			cursor:pointer;
+			display:inline-block;
+			position:relative;
+			
+			font-size:28px;
+			font-weight:normal;
+			line-height:34px;
+			color:#000;
+			
+			padding:17px 0px 11px 50px;
+		}
+			
+			#chapter [data-chapter] [data-icon]{
+				display:inline-block;
+				
+				width:34px;height:34px;
+				line-height:38px;
+				
+				/*font-family:'KNPS';*/
+				font-size:22px;
+				font-weight:normal;
+				text-align:center;
+				color:#fff;
+				border-radius:40px;
+				margin-right:15px;
+				
+				position:absolute; left:0px; top:15px;
+			}
+			
+			#screen[data-grade="3"] #chapter [data-chapter] [data-icon="·"]{
+				font-size:0; left:10px; top:25px;
+				width:16px;height:16px;
+				background-color:#c486ac;
+			}
+			#screen[data-grade="4"] #chapter [data-chapter] [data-icon="·"]{
+				font-size:0; left:10px; top:25px;
+				width:16px;height:16px;
+				background-color:#c486ac;
+			}
+			
+			#chapter [data-chapter] [data-icon="1"],
+			#chapter [data-chapter] [data-icon="2"],
+			#chapter [data-chapter] [data-icon="3"]{
+				background-color:#b73e91;
+			}
+			#chapter [data-chapter] [data-icon="4"],
+			#chapter [data-chapter] [data-icon="5"],
+			#chapter [data-chapter] [data-icon="6"],
+			#chapter [data-chapter] [data-icon="7"]{
+				background-color:#04a569;
+			}
+			#chapter [data-chapter] [data-icon="8"],
+			#chapter [data-chapter] [data-icon="9"],
+			#chapter [data-chapter] [data-icon="10"]{
+				background-color:#eb6100;
+			}
+			#chapter [data-chapter] [data-icon="11"],
+			#chapter [data-chapter] [data-icon="12"],
+			#chapter [data-chapter] [data-icon="13"]{
+				background-color:#01a9d5;
+			}	
+		
+		
+		li .corner{
+			display:none;
+		}
+		li.on .corner{
+			display:block;
+		}
+	/*=======================*/	
+	/*=======================*/
+	.corner{
+		position:relative;
+		
+		border-top:1px dashed #aaa;
+		border-bottom:1px dashed #aaa;
+		padding:10px 20px 8px 20px;
+	}	
+	
+		.corner [data-corner]{
+			position:relative;
+			
+			font-size:22px;
+			font-weight:100;
+			
+			line-height:52px;
+			
+			padding-left:115px;
+		}
+
+		.corner [data-corner] [data-icon]{
+			display:inline-block;
+			width:100px;height:32px;
+			line-height:36px;
+			
+			position:absolute;left:0; top:11px;
+			margin-right:20px;
+			
+			text-align:center;
+			
+			background-color:#00bcd4;
+			border-radius:100px;
+			
+			color:#fff;
+			font-size:18px;
+		}
+		.corner [data-corner] .title{
+			position:relative; top:2px;
+		}
+		.corner [data-corner] .page{
+			position:absolute;right:105px;top:2px;
+			text-align:right;
+			font-size:18px;
+			color:#b3b3b3;
+		}
+		
+		.corner [data-corner] button[data-type="ebook"]{
+			position:absolute;right:50px;top:13px;
+			font-size:0;
+			width:28px;height:26px;
+			background-image:url("./../ui/btns/ebook.png");
+		}
+		
+		.corner [data-corner] button[data-type="popup"]{
+			position:absolute;right:0px;top:13px;
+			font-size:0;
+			width:26px;height:26px;
+			background-image:url("./../ui/btns/smart.png");
+		}
+
+			

@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--COMMON CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+    <!--COMMON JS-->
+    <script type="text/javascript" src="../../../../com/js/module.exe.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.util.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.fn.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.media.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.quiz.js" ></script>
+    <!-- VIEW SRC-->
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+    <script type="text/javascript" src="../../[src]/js/popup.skill.js" ></script>
+    <script type="text/javascript" src="../../[src]/js/popup.view.js" ></script>
+    <!-- VIEW -->
+    <!--link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js" ></script-->
+</head>
+
+<body>
+	
+	<main id="popup-view" data-design="">
+		
+		<header>
+			<!--주제-->
+	    	<h1 data-subject="동기유발">
+	    		<span>동기유발</span>
+	    		<span>좋아하는 색에 관해 이야기하기</span>
+	    	</h1>
+		</header>
+		
+	    <section>
+	    	
+	    	<div data-ui="mt:50">
+	    		
+	    		<img src="res/cha_1.png" data-ui="mt:80"/>
+	    		
+		    	<div data-ui="P:a x:650 y:0 w:1100">
+		    		
+		    		<!--쓰기 박스-->
+		    		<div data-box="서술형">
+		    			
+			    		<!--쓰기 제목-->
+			    		<div data-title="">
+			    			<p>오늘 입은 옷은 무슨 색인가요?</p>
+			    		</div>
+			    		
+			    		<quizItem data-id="q-1" data-ui="h:200">
+							<assessmentItem data-response-type="essay" data-box="퀴즈">
+								<itemBody data-input="" data-ui="m:0 P:a x:-5 y:-5">
+									<textarea placeHolder="직접 써 보세요." data-ui="mt:20 ml:50 w:900 h:200"></textarea>
+								</itemBody>					
+								<assessFeedback>
+									<p >파란색 옷을 입었습니다.</p>
+								</assessFeedback>
+							</assessmentItem>
+						</quizItem>
+						
+			        </div>
+			        
+			        <!--쓰기 박스-->
+			    	<div data-box="서술형" data-ui="mt:50">
+			    		
+			    		<!--쓰기 제목-->
+			    		<div data-title="">
+			    			<p>무슨 색을 좋아하나요?</p>
+			    		</div>
+			    		
+			    		<quizItem data-id="q-2" data-ui="h:200">
+							<assessmentItem data-response-type="essay" data-box="퀴즈">
+								<itemBody data-input="" data-ui="m:0 P:a x:-5 y:-5">
+									<textarea placeHolder="직접 써 보세요." data-ui="mt:20 ml:50 w:900 h:200"></textarea>
+								</itemBody>					
+								<assessFeedback>
+									<p data-ui="LH:80">맑은 날 제주도의 바다 색깔이 아름다워서 좋아합니다.</p>
+								</assessFeedback>
+							</assessmentItem>
+						</quizItem>
+						
+			        </div>
+
+					<quizBtn data-id="q-1 q-2" 
+						data-skill="exReset" 
+						data-ui="P:a r:0 t:670">
+						<p>예시 답안</p>
+					</quizBtn>
+		    		
+		    	</div>
+	    	</div>
+	    </section>
+	    
+	</main>
+	
+</body>
+</html>
+

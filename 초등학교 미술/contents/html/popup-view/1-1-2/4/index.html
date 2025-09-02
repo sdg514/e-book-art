@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--COMMON CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+    <!--COMMON JS-->
+    <script type="text/javascript" src="../../../../com/js/module.exe.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.util.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.fn.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.media.js" ></script>
+    <script type="text/javascript" src="../../../../com/js/module.quiz.js" ></script>
+    <!-- VIEW SRC-->
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+    <link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+    <script type="text/javascript" src="../../[src]/js/popup.skill.js" ></script>
+    <script type="text/javascript" src="../../[src]/js/popup.view.js" ></script>
+    <!-- VIEW -->
+    <!--link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js" ></script-->
+</head>
+
+<body>
+	
+	<main id="popup-view" data-design="">
+		
+		<header>
+			<!--주제-->
+	    	<h1 data-subject="활동하기2">
+	    		<span>활동하기2</span>
+	    		<span data-ui="Fc:#000000 BGc:inherit">비슷한 색과 반대색의 특징이 드러나도록 표현해 봅시다.</span>
+	    	</h1>
+		</header>
+		
+		<div data-skill="tab">
+	    	
+	    	<div data-tab="1">
+	    		<!--이미지 보기-->
+	    		<div data-box="이미지">
+	    			<img src="res/img_1.png" />
+	    			<!--이미지 정보 표시 - 중앙정렬-->
+	    			<p data-note="그림-c">
+	    				<b>조승래</b><span>(학생 작품)</span> 
+	    				<b>「즐거운 닭」</b> <span>(종이에 수채화물감/21x30 cm)</span>
+	    			</p>
+	    		</div>
+	    		
+	    		<!--퀴즈-->
+		    	<quizItem data-id="q-1" data-ui="P:a r:0 y:270">
+		    		
+		    		<!--쓰기 박스-->
+	    			<div data-box="서술형" data-ui="w:820">
+	    				
+			    		<!--쓰기 제목-->
+			    		<div data-title="">
+			    			<p>이 그림은 비슷한 색을 사용했나요?<br/>반대색을 사용했나요?</p>
+			    		</div>
+			    		
+			    		<!--쓰기 기능-->
+						<assessmentItem 
+							data-response-type="essay" 
+							data-essay="">
+							
+			    			<itemBody>
+			    				<input type="text" placeHolder="직접 써 보세요."/>
+			    			</itemBody>
+			    			
+			    			<assessFeedback>
+			    				<p data-ui="Ta:c">반대색</p>
+			    			</assessFeedback>
+			    			
+			    		</assessmentItem>
+			        </div>
+			        
+			        <!--퀴즈 버튼-->
+			        <quizBtn data-id="q-1" 
+						data-skill="answerReset" 
+						data-ui="P:a l:0 t:-80">
+						<p>예시 답안</p>
+					</quizBtn>
+					
+	    		</quizItem>
+	    		
+	    	</div>
+	    	
+	    	<div data-tab="2">
+	    		
+	    		<!--이미지 보기-->
+	    		<div data-box="이미지" data-ui="mt:90">
+	    			<img src="res/img_2.png" />
+	    			<!--이미지 정보 표시 - 중앙정렬-->
+	    			<p data-note="그림-c">
+	    				<b>최은규 외 5명</b><span>(학생 협동 작품)</span> 
+	    				<b>「물이 되는 꿈」</b> <span>(종이에 수채화물감/30x50 cm)</span>
+	    			</p>
+	    		</div>
+	    		
+	    		<!--퀴즈-->
+		    	<quizItem data-id="q-2" data-ui="P:a r:0 y:270">
+		    		
+		    		<!--쓰기 박스-->
+	    			<div data-box="서술형" data-ui="w:820">
+			    		
+			    		<!--쓰기 제목-->
+			    		<div data-title="">
+			    			<p>이 그림은 비슷한 색을 사용했나요?<br/>반대색을 사용했나요?</p>
+			    		</div>
+			    		
+			    		<!--쓰기 기능-->
+						<assessmentItem 
+							data-response-type="essay" 
+							data-essay="">
+							
+			    			<itemBody>
+			    				<input type="text" placeHolder="직접 써 보세요."/>
+			    			</itemBody>
+			    			
+			    			<assessFeedback>
+			    				<p data-ui="Ta:c">비슷한 색</p>
+			    			</assessFeedback>
+			    			
+			    		</assessmentItem>
+			        </div>
+			        
+			        <!--퀴즈 버튼-->
+			        <quizBtn data-id="q-2" 
+						data-skill="answerReset" 
+						data-ui="P:a l:0 t:-80">
+						<p>예시 답안</p>
+					</quizBtn>
+					
+	    		</quizItem>
+	    		
+	    	</div>
+	    	
+		</div>
+		
+	</main>
+	
+</body>
+</html>
+

@@ -1,0 +1,64 @@
+
+#plugin{
+	width:590px;
+}
+	#plugin>div{
+		width:590px;
+		background-color:#fff;
+		border-radius:20px;
+		overflow:hidden;
+	}
+#plugin .head{
+	width:100%; height:56px;
+	background-color:#4490ff;
+}
+	#plugin .head .title{
+		
+		
+		line-height:56px;
+		font-family:'One';
+		font-size:26px;
+		font-weight:normal;
+		color:#fff;
+		position:absolute;
+		width:100%;
+		
+		text-indent:20px;
+	}
+	#plugin .head>[data-btn="close"]{
+		cursor:pointer;
+		width:23px; height:22px;
+		position:absolute; right:15px; top:16px;
+		background-image: url('img/btn-close.png');
+	}
+	
+#plugin .body{
+	position:relative;
+	width:100%; height:100px;
+}
+	#plugin .body input{
+		
+		width:96%; height:70px;
+		
+		text-align:center;
+		line-height:70px;
+		font-size:24px;
+		color:#000;
+		
+		margin-left:2%; 
+		margin-top:20px;
+		border-bottom:2px dotted #ddd;
+	}
+	
+#plugin .btns{
+	width:100%; height:76px;
+	text-align:center;
+}
+	#plugin .btns>[data-btn="save"]{
+		cursor:pointer;
+		width:188px; height:61px;
+		position:relative; top:3px;
+		background-image: url('img/btn-save.png');
+	}
+	
+	
